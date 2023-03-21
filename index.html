@@ -6,15 +6,91 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        * {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            margin: 0px;
+            background-color: #212428de;
+        }
+
+        #nav-menu {
+            border: 1px solid red;
+            height: 60px;
+            /* backdrop-filter: blur(15px); */
+            background: transparent;
+        }
+
+        #items {
+            border: 1px solid black;
+            height: 25px;
+            display: flex;
+            width: 40%;
+            justify-content: space-between;
+            margin-top: 17px;
+            background: transparent;
+        }
+        #items>h3>a:hover{
+            color: rgb(255, 255, 255);
+        }
+        #nav{
+            border: 1px solid gold;
+            width: 95%;
+            margin: auto;
+            background: transparent;
+            display: flex;
+            justify-content: space-between;
+        }
+        #user-detail-name{
+            border: 1px solid green;
+            height: 60px;
+            color: rgb(255, 255, 255);
+            height: 25px;
+            margin-top: 16px;
+        }
+        #user-detail-name>h3{
+        font-weight: 100;
+        }
+        #items>h3>a {
+            text-decoration: none;
+            color: rgb(211, 211, 211);
+            margin-bottom: -10px;
+            font-weight: 200;
+            background: transparent;
+        }
+        #resume{
+            /* background-color: white; */
+            /* border: 1px solid purple; */
+        }
+        #resumebut{
+            color:rgb(255, 255, 255);
+            font-size: 18px;
+            background-color: rgb(255, 63, 63);
+            margin-top: 14px;
+            width: 100px;
+            height: 30px;
+            border: none;
+            border-radius: 6px;
+        }
+    </style>
 </head>
 
 <body>
     <div id="nav-menu">
-        <h3 id="about" class="nav-link about"> <a href="">About</a> </h3>
-        <h3 id="skills" class="nav-link skills"> <a href="">Skills</a> </h3>
-        <h3 id="projects " class="nav-link projects"> <a href="">Projects</a> </h3>
-        <h3 id="contact " class="nav-link contact"> <a href="">Contact</a> </h3>
-        <h3 id="home" class="nav-link home"> <a href="">Home</a> </h3>
+        <div id="nav">
+            <div  id="user-detail-name">
+                <h3>Imran Sutar</h3>
+            </div>
+            <div id="items">
+                <h3 id="about" class="nav-link about"> <a href="">About</a> </h3>
+                <h3 id="skills" class="nav-link skills"> <a href="">Skills</a> </h3>
+                <h3 id="projects" class="nav-link projects"> <a href="">Projects</a> </h3>
+                <h3 id="contact" class="nav-link contact"> <a href="">Contact</a> </h3>
+                <h3 id="home" class="nav-link home"> <a href="">Home</a> </h3>
+            </div>
+            <div id="resume">
+                <button id="resumebut">Resume</button>
+            </div>
+        </div>
     </div>
 </body>
 
