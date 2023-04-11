@@ -6,23 +6,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
     <link rel="stylesheet" href=" ">
     <style>
         * {
-            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
             margin: 0px;
-            background-color: #23272b;
+            background-color: #2e4333;
         }
+
+        #i1 {
+            margin-left: -6px;
+
+        }
+
+        #i1:hover {
+            width: 66px;
+            margin-right: 24px;
+            margin-top: 17px;
+            margin-left: -6px;
+            margin-bottom: -3px;
+            transition: 500ms;
+        }
+
+        #i2:hover {
+            transition: 500ms;
+            width: 66px;
+            margin-right: 27px;
+            margin-top: 17px;
+            margin-left: -3px;
+            margin-bottom: -3px;
+        }
+
+        #i3:hover {
+            width: 66px;
+            transition: 500ms;
+            margin-right: 27px;
+            margin-top: 17px;
+            margin-left: -3px;
+            margin-bottom: -3px;
+        }
+
+        #i4:hover {
+            width: 66px;
+            margin-right: 27px;
+            margin-top: 17px;
+            transition: 500ms;
+            margin-left: -3px;
+            margin-bottom: -3px;
+        }
+
 
         #nav-menu {
             /* border: 1px solid red; */
             /* position: fixed; */
             top: 0px;
             width: 100%;
-            margin-bottom: 20px;
+            margin-bottom: 60px;
             height: 60px;
             /* backdrop-filter: blur(15px); */
-            background-color: #43464bde;
+            background-color: #14799cde;
         }
 
         #items {
@@ -54,17 +98,19 @@
             border: 1px solid green;
             height: 60px;
             color: rgb(255, 255, 255);
+            background-color: #14799cde;
             height: 25px;
             margin-top: 16px;
         }
 
         #user-detail-name>h3 {
             font-weight: 100;
+            background-color: #14799cde;
         }
 
         #items>h3>a {
             text-decoration: none;
-            color: rgb(211, 211, 211);
+            color: rgb(255, 255, 255);
             margin-bottom: -10px;
             font-weight: 200;
             background: transparent;
@@ -133,11 +179,13 @@
 
         #items>h3 {
             background: transparent;
+            color: white;
         }
 
 
         #user-detail-name>h3 {
             background-color: #43464bde;
+            color: white;
         }
 
         #user-detail-name {
@@ -152,25 +200,25 @@
         }
 
         #user-detail-intro {
-            border: 1px solid red;
-            height: 1000px;
-            display: flex;
+            /* border: 1px solid red; */
+            height: auto;
+            /* display: flex; */
             text-align: center;
         }
 
         #aboutme {
-            border: 1px solid black;
-            width: 50%;
-            height: 400px;
-            margin-left: 50px;
+            /* border: 1px solid black; */
+            width: 80%;
+            height: 300px;
+            margin-left: 10%;
             color: #fff;
             /* align-items: center; */
-            margin-top: 30px;
+            margin-top: 120px;
         }
 
         #connect {
             margin-top: 30px;
-            border: 1px solid black;
+            /* border: 1px solid black; */
             color: #fff;
             width: 30%;
             margin-left: 100px;
@@ -186,51 +234,10 @@
         }
 
         .imeg:hover {
-            background-color: #00fff2;
+            background-color: #4b6e3d;
             border-radius: 2px solid #4b89c4;
             /* transition: 0.5s; */
             cursor: pointer;
-        }
-
-        #i1 {
-            margin-left: -6px;
-
-        }
-
-        #i1:hover {
-            width: 66px;
-            margin-right: 24px;
-            margin-top: 17px;
-            margin-left: -6px;
-            margin-bottom: -3px;
-            transition: 500ms;
-        }
-
-        #i2:hover {
-            transition: 500ms;
-            width: 66px;
-            margin-right: 27px;
-            margin-top: 17px;
-            margin-left: -3px;
-            margin-bottom: -3px;
-        }
-
-        #i3:hover {
-            width: 66px;
-            transition: 500ms;
-            margin-right: 27px;
-            margin-top: 17px;
-            margin-left: -3px;
-            margin-bottom: -3px;
-        }
-
-        #i4:hover {
-            width: 66px;
-            margin-right: 27px;
-            margin-top: 17px;
-            transition: 500ms;
-            margin-left: -3px;
-            margin-bottom: -3px;
         }
 
         #resumebut2 {
@@ -244,32 +251,130 @@
             border: none;
         }
 
-        #resumebut2:hover{
-            height: 56px;
-            width: 160px;
-            margin-top: 47px;
+        #resumebut2:hover {
+            height: 60px;
+            width: 170px;
+            margin-top: 50px;
             font-size: 33px;
             cursor: pointer;
             transition: 500ms;
-            color: red;
-            background-color: white;
+            color: #fff;
+            background-color: rgb(71, 114, 62);
             font-weight: bold;
         }
-        #inh{
-            font-weight: 100;
+
+        #inh {
+            margin-top: -10px;
+            font-weight: 400;
+        }
+
+        #learns {
+            border: 1px solid red;
+            height: 666px;
+            margin-top: 60px;
+            /* width: 700px; */
+        }
+
+        #acc {
+            margin-top: -140px;
+            margin-left: -622px;
+
+        }
+
+        #bot {
+            display: flex;
+            margin: -145px 33px -10px 265px;
+        }
+
+        #resumebut2 {
+            margin: 60px -688px 0px 0px;
+        }
+
+        #skl {
+            color: #fff;
+        }
+
+        #title-skill {
+            border: 1px solid red;
+            /* height: 100px; */
+            width: 80%;
+            margin-left: 10%;
+            margin-top: 60px;
+            text-align: center;
+        }
+        
+        #all-skills {
+            border: 1px solid;
+            width: 80%;
+            margin-left: 10%;
+            margin-top: 40px;
+            height: 160px;
+            display: flex;
+            gap: 30px;
+            /* overflow-x:auto; */
+            overflow: hidden;
+        }
+        .skills-card{
+            animation: scroll 25s linear infinite;
+            /* border: 1px solid; */
+            width: 120px;
+            height: 130px;
+        }
+        @keyframes scroll{
+            0%{
+                transform: translateX(0);
+            }
+            100%{
+                transform: translateX(calc(-200px * 9));
+            }
+        }
+
+        /* .scrol::-webkit-scrollbar{
+            width: 0;
+        } */
+
+        .skills-card-name{
+            color: rgb(13, 204, 172);
+            /* margin-left: 33px; */
+            text-align: center;
+            margin-top: -8px;
+            font-size: 20px;
+        }
+       
+        #big{
+            /* border: 1px solid red; */
+            width: 110px;
+            height: 100px;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+        #big>img{
+            width: 80%;
+            margin: 8px 0px 0px 10px;
+        }
+        #big>img:hover{
+            width: 90%;
+            margin-top: 2px;
+            margin-left: 5px;
+            transition: 500ms;
+        }
+        #me, #skl{
+            border: 1px solid red;
+            padding-bottom: 6px;
         }
 
     </style>
-    <!-- <script src="float-panel.js"></script>
+    <script src="float-panel.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script> -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  
 </head>
 
 <body>
     <div id="nav-menu">
         <div id="nav">
             <div id="user-detail-name">
-                <h3>Imran Sutar</h3>
+                <h3 style="background-color: #14799cde;">Imran Sutar</h3>
             </div>
             <div id="items">
                 <h3 id="about"> <a href="" class="nav-link about">About</a> </h3>
@@ -278,8 +383,8 @@
                 <h3 id="contact"> <a href="" class="nav-link contact">Contact</a> </h3>
                 <h3 id="home"> <a href="" class="nav-link home">Home</a> </h3>
             </div>
-            <div id="resume" class="nav-link resume">
-                <button id="resumebut"  id="resume-button-1">Resume</button>
+            <div id="resume" class="nav-link resume" style="background-color: #147293de;">
+                <button id="resumebut" id="resume-button-1">Resume</button>
             </div>
         </div>
     </div>
@@ -304,7 +409,7 @@
     </div>
 
     <div id="user-detail-intro">
-        <div id="connect">
+        <!-- <div id="connect"  data-aos="fade-left" data-aos-duration='1900'>
             <h1>Connect with me</h1>
             <div id="acc">
                 <a href="" id="contact-github"> <img class="imeg" id="i1"
@@ -321,23 +426,188 @@
                     <button id="resumebut2"  id="resume-button-2">Resume</button>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div id="aboutme" data-aos="fade-right" data-aos-duration='1900'>
-            <h1 id="me">About Me</h1> <br><br>
-            <h3 id="inh">Hello Everyone, My name is Imran Sutar and I am from Solapur, Maharashtra (India). I completed my diploma in Mechanical Enginnering and then I go for bachelor's of Enginnering, and after that I joined Masai School full time <br> course to become a full stack web developer. </h3>
+            <h1 id="me">ABOUT ME</h1> <br><br>
+            <h3 id="inh">Hello Everyone, My name is Imran Sutar and I am from Solapur, Maharashtra (India). I completed
+                my bachelor's of Enginnering, and after that I joined Masai School full time course to become a full
+                stack web developer. Curious to solve new problems , having apetite to learn a new tech stack. Like to
+                work in team and always looking for seeking the knowledge. </h3>
         </div>
+        <div id="bot">
+            <div>
+                <a href="" id="contact-github"> <img class="imeg" id="i1"
+                        src="https://cdn-icons-png.flaticon.com/512/1051/1051326.png" alt=""> </a>
+                <a href="" id="contact-linkedin"> <img class="imeg" id="i2"
+                        src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png" alt=""> </a>
+                <a href="" id="contact-phone"> <img class="imeg" id="i3"
+                        src="https://cdn-icons-png.flaticon.com/512/455/455705.png" alt=""> </a>
+                <a href="" id="contact-email"> <img class="imeg" id="i4"
+                        src="https://cdn-icons-png.flaticon.com/512/3178/3178158.png" alt=""> </a>
+            </div>
+            <div id="res">
+                <div id="resumea" class="nav-link resume">
+                    <button id="resumebut2" id="resume-button-2">Resume</button>
+                </div>
+            </div>
+        </div>
+    </div> <br>
+
+    <div id="learns">
+
+        <div id="title-skill">
+            <h1 id="skl"> SKILLS</h1>
+        </div>
+        <div id="all-skills" class="scrol">
+
+            <div class="skills-card">
+                <div id="big">
+                    <img class="skills-card-img" src="https://img.icons8.com/color/256/html-5.png" alt="">
+                </div>
+                <h3 class="skills-card-name">HTML</h3>
+            </div>
+       
+            <div class="skills-card">
+                <div id="big">
+                    <img class="skills-card-img" src="https://img.icons8.com/color/256/css3.png" alt="">
+                </div>
+                <h3 class="skills-card-name">CSS</h3>
+            </div>
+
+            <div class="skills-card">
+                <div id="big">
+                    <img class="skills-card-img" src="https://img.icons8.com/color/256/javascript.png" alt="">
+                </div>
+                <h3 class="skills-card-name">JavaScript</h3>
+            </div>
+       
+            <div class="skills-card">
+                <div id="big">
+                    <img class="skills-card-img" src="https://img.icons8.com/fluency/256/node-js.png" alt="">
+                </div>
+                <h3 class="skills-card-name">Node.js</h3>
+            </div>
+       
+            <div class="skills-card">
+                <div id="big">
+                    <img class="skills-card-img" src="https://img.icons8.com/ios/256/express-js.png" alt="">
+                </div>
+                <h3 class="skills-card-name">Express.js</h3>
+            </div>
+       
+            <div class="skills-card">
+                <div id="big">
+                    <img class="skills-card-img" src="https://img.icons8.com/color/256/mongodb.png" alt="">
+                </div>
+                <h3 class="skills-card-name">MongoDb</h3>
+            </div>
+
+            <div class="skills-card">
+                <div id="big">
+                    <img class="skills-card-img" src="https://img.icons8.com/fluency/256/mysql-logo.png" alt="">
+                </div>
+                <h3 class="skills-card-name">MySQL</h3>
+            </div>
+       
+            <div class="skills-card">
+                <div id="big">
+                    <img class="skills-card-img" src="https://img.icons8.com/officel/256/react.png" alt="">
+                </div>
+                <h3 class="skills-card-name">React</h3>
+            </div>
+       
+            <div class="skills-card">
+                <div id="big">
+                    <img class="skills-card-img" src="https://gaurav-dev-portfolio.netlify.app/static/media/dsa.0735e929.png" alt="">
+                </div>
+                <h3 class="skills-card-name">DSA</h3>
+            </div>
+
+            <div class="skills-card">
+                <div id="big">
+                    <img class="skills-card-img" src="https://img.icons8.com/color/256/redis.png" alt="">
+                </div>
+                <h3 class="skills-card-name">Redis</h3>
+            </div>
+       
+            <div class="skills-card">
+                <div id="big">
+                    <img class="skills-card-img" src="https://img.icons8.com/color/256/git.png" alt="">
+                </div>
+                <h3 class="skills-card-name">Git</h3>
+            </div>
+       
+            <div class="skills-card">
+                <div id="big">
+                    <img class="skills-card-img" src="https://img.icons8.com/windows/256/github.png" alt="">
+                </div>
+                <h3 class="skills-card-name">GitHub</h3>
+            </div>
+       
+            <div class="skills-card">
+                <div id="big">
+                    <img class="skills-card-img" src="https://img.icons8.com/fluency/256/typescript--v2.png" alt="">
+                </div>
+                <h3 class="skills-card-name">Typescript</h3>
+            </div>
+       
+            <div class="skills-card">
+                <div id="big">
+                    <img class="skills-card-img" src="https://img.icons8.com/color/256/bootstrap.png" alt="">
+                </div>
+                <h3 class="skills-card-name">Bootstrap</h3>
+            </div>
+       
+            <div class="skills-card">
+                <div id="big">
+                    <img class="skills-card-img" src="https://img.icons8.com/color/256/visual-studio--v2.png" alt="">
+                </div>
+                <h3 class="skills-card-name">VS Code</h3>
+            </div>
+       
+            <div class="skills-card">
+                <div id="big">
+                    <img class="skills-card-img" src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/256/external-postman-is-the-only-complete-api-development-environment-logo-shadow-tal-revivo.png" alt="">
+                </div>
+                <h3 class="skills-card-name">Postman</h3>
+            </div>
+       
+            <div class="skills-card">
+                <div id="big">
+                    <img class="skills-card-img" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/256/external-netlify-a-cloud-computing-company-that-offers-hosting-and-serverless-backend-services-for-static-websites-logo-color-tal-revivo.png" alt="">
+                </div>
+                <h3 class="skills-card-name">Netlify</h3>
+            </div>
+       
+            <div class="skills-card">
+                <div id="big">
+                    <img class="skills-card-img" src="https://avatars.githubusercontent.com/u/77067997?s=200&v=4" alt="">
+                </div>
+                <h3 class="skills-card-name">Cyclic</h3>
+            </div>
+       
+            <div class="skills-card">
+                <div id="big">
+                    <img class="skills-card-img" src="https://img.icons8.com/color/256/amazon-web-services.png" alt="">
+                </div>
+                <h3 class="skills-card-name">AWS</h3>
+            </div>
+    
+
+        </div>
+
     </div>
 
 </body>
 
 </html>
 
-<!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
-<!-- <script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
     AOS.init();
-</script> -->
+</script>
 
-<!-- <script>
+<script>
     var TxtType = function (el, toRotate, period) {
         this.toRotate = toRotate;
         this.el = el;
@@ -357,14 +627,10 @@
         } else {
             this.txt = fullTxt.substring(0, this.txt.length + 1);
         }
-
         this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
-
         var that = this;
         var delta = 200 - Math.random() * 100;
-
         if (this.isDeleting) { delta /= 2; }
-
         if (!this.isDeleting && this.txt === fullTxt) {
             delta = this.period;
             this.isDeleting = true;
@@ -373,7 +639,6 @@
             this.loopNum++;
             delta = 500;
         }
-
         setTimeout(function () {
             that.tick();
         }, delta);
@@ -394,4 +659,4 @@
         css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
         document.body.appendChild(css);
     };
-</script> -->
+</script>
