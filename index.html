@@ -362,6 +362,18 @@
             border: 1px solid red;
             padding-bottom: 6px;
         }
+        #projectsall{
+            border: 1px solid black;
+            width: 400px;
+            height: 600px;
+            display: flex;
+        }
+        #projectsall>div>img{
+            width: 100%;
+            height: 250px;
+        }
+
+        
 
     </style>
     <!-- <script src="float-panel.js"></script>
@@ -377,14 +389,16 @@
                 <h3 style="background-color: #14799cde;">Imran Sutar</h3>
             </div>
             <div id="items">
-                <h3 id="about"> <a href="" class="nav-link about">About</a> </h3>
+                <h3 id="about" class="about section"> <a href="" class="nav-link about"> <span id="invi" style="color: #10799c;background-color:#10799c;">HTML</span> About</a> </h3>
                 <h3 id="skills"> <a href="" class="nav-link skills">Skills</a> </h3>
                 <h3 id="projects"> <a href="" class="nav-link projects">Projects</a> </h3>
                 <h3 id="contact"> <a href="" class="nav-link contact">Contact</a> </h3>
                 <h3 id="home"> <a href="" class="nav-link home">Home</a> </h3>
             </div>
             <div id="resume" class="nav-link resume" style="background-color: #147293de;">
-                <button id="resumebut" id="resume-button-1">Resume</button>
+                <a href="Imran_Sutar_Resume.pdf" class="nav-link resume" id="resume-button-1" download="">
+                    <button id="resumebut" id="resume-button-1">Resume</button>
+                    <i class="fa fa-download">  </i></a>
             </div>
         </div>
     </div>
@@ -408,25 +422,10 @@
         </h1>
     </div>
 
+    <!-- document.querySelector("#nav-menu > div > a.nav-link.skills") -->
+    
     <div id="user-detail-intro">
-        <!-- <div id="connect"  data-aos="fade-left" data-aos-duration='1900'>
-            <h1>Connect with me</h1>
-            <div id="acc">
-                <a href="" id="contact-github"> <img class="imeg" id="i1"
-                        src="https://cdn-icons-png.flaticon.com/512/1051/1051326.png" alt=""> </a>
-                <a href="" id="contact-linkedin"> <img class="imeg" id="i2"
-                        src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png" alt=""> </a>
-                <a href="" id="contact-phone"> <img class="imeg" id="i3"
-                        src="https://cdn-icons-png.flaticon.com/512/455/455705.png" alt=""> </a>
-                <a href="" id="contact-email"> <img class="imeg" id="i4"
-                        src="https://cdn-icons-png.flaticon.com/512/3178/3178158.png" alt=""> </a>
-            </div>
-            <div id="res">
-                <div id="resumea" class="nav-link resume">
-                    <button id="resumebut2"  id="resume-button-2">Resume</button>
-                </div>
-            </div>
-        </div> -->
+        
         <div id="aboutme" data-aos="fade-right" data-aos-duration='1900'>
             <h1 id="me">ABOUT ME</h1> <br><br>
             <h3 id="inh">Hello Everyone, My name is Imran Sutar and I am from Solapur, Maharashtra (India). I completed
@@ -447,7 +446,9 @@
             </div>
             <div id="res">
                 <div id="resumea" class="nav-link resume">
-                    <button id="resumebut2" id="resume-button-2">Resume</button>
+                    <a href="Imran_Sutar_Resume.pdf" class="nav-link resume" id="resume-button-1" download="">
+                        <button id="resumebut2" id="resume-button-2">Resume</button>
+                        <i class="fa fa-download">  </i></a>
                 </div>
             </div>
         </div>
@@ -597,6 +598,130 @@
         </div>
 
     </div>
+
+
+    <!-- https://starlit-croissant-41a86a.netlify.app/ -->
+
+    <div id="projectsall">
+
+        <div class="project-card">
+            <img src="./hireexpert.png" alt="">
+            <p class="project-title">Hirexpert</p>
+            <div class="project-description">
+                <p> <b> Brookstone </b>sells a wide assortment of products, including remote control
+                    helicopters and drones, alarm clocks and smartwatches, massage chairs, speakers, iPads
+                    and tablet accessories, blankets, pillows, and many other lifestyle items. </p>
+                <p><b> Features : </b> Home page, product page, Account page
+                    Log-In, Sign-Up, Admin page
+                    CRUD, JW-Authentication, Cart page
+                    Checkout and Payment page</p>
+            </div>
+            <div class="techstack">
+                <p><b>Tech Stack : </b> </p>
+                <p class="project-tech-stack">HTML,CSS, JavaScript, NodeJs, Express, Mongo DB Atlas,
+                    Mongoose</p>
+            </div>
+            <div class="projectlinks">
+                <br>
+                <a target="_blank" href="https://github.com/Imran2909/puzzled-number-9667" class="project-github-link">Github</a>
+                <a target="_blank" href="https://starlit-croissant-41a86a.netlify.app/" class="project-deployed-link">Deployed</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="./hireexpert.png" alt="">
+            <p class="project-title">Hirexpert</p>
+            <div class="project-description">
+                <p> <b> Brookstone </b>sells a wide assortment of products, including remote control
+                    helicopters and drones, alarm clocks and smartwatches, massage chairs, speakers, iPads
+                    and tablet accessories, blankets, pillows, and many other lifestyle items. </p>
+                <p><b> Features : </b> Home page, product page, Account page
+                    Log-In, Sign-Up, Admin page
+                    CRUD, JW-Authentication, Cart page
+                    Checkout and Payment page</p>
+            </div>
+            <div class="techstack">
+                <p><b>Tech Stack : </b> </p>
+                <p class="project-tech-stack">HTML,CSS, JavaScript, NodeJs, Express, Mongo DB Atlas,
+                    Mongoose</p>
+            </div>
+            <div class="projectlinks">
+                <br>
+                <a target="_blank" href="https://github.com/Imran2909/puzzled-number-9667" class="project-github-link">Github</a>
+                <a target="_blank" href="https://starlit-croissant-41a86a.netlify.app/" class="project-deployed-link">Deployed</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="./hireexpert.png" alt="">
+            <p class="project-title">Hirexpert</p>
+            <div class="project-description">
+                <p> <b> Brookstone </b>sells a wide assortment of products, including remote control
+                    helicopters and drones, alarm clocks and smartwatches, massage chairs, speakers, iPads
+                    and tablet accessories, blankets, pillows, and many other lifestyle items. </p>
+                <p><b> Features : </b> Home page, product page, Account page
+                    Log-In, Sign-Up, Admin page
+                    CRUD, JW-Authentication, Cart page
+                    Checkout and Payment page</p>
+            </div>
+            <div class="techstack">
+                <p><b>Tech Stack : </b> </p>
+                <p class="project-tech-stack">HTML,CSS, JavaScript, NodeJs, Express, Mongo DB Atlas,
+                    Mongoose</p>
+            </div>
+            <div class="projectlinks">
+                <br>
+                <a target="_blank" href="https://github.com/Imran2909/puzzled-number-9667" class="project-github-link">Github</a>
+                <a target="_blank" href="https://starlit-croissant-41a86a.netlify.app/" class="project-deployed-link">Deployed</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="./hireexpert.png" alt="">
+            <p class="project-title">Hirexpert</p>
+            <div class="project-description">
+                <p> <b> Brookstone </b>sells a wide assortment of products, including remote control
+                    helicopters and drones, alarm clocks and smartwatches, massage chairs, speakers, iPads
+                    and tablet accessories, blankets, pillows, and many other lifestyle items. </p>
+                <p><b> Features : </b> Home page, product page, Account page
+                    Log-In, Sign-Up, Admin page
+                    CRUD, JW-Authentication, Cart page
+                    Checkout and Payment page</p>
+            </div>
+            <div class="techstack">
+                <p><b>Tech Stack : </b> </p>
+                <p class="project-tech-stack">HTML,CSS, JavaScript, NodeJs, Express, Mongo DB Atlas,
+                    Mongoose</p>
+            </div>
+            <div class="projectlinks">
+                <br>
+                <a target="_blank" href="https://github.com/Imran2909/puzzled-number-9667" class="project-github-link">Github</a>
+                <a target="_blank" href="https://starlit-croissant-41a86a.netlify.app/" class="project-deployed-link">Deployed</a>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div id="gitall">
+        <!-- [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=imran&theme=solarized-dark&border_radius=4.6&card_width=548)](https://git.io/streak-stats) -->
+        <div id="stats">
+            <h2 class="mid">Github Stats</h2>
+            <hr>
+        <div>
+        <img id="github-top-langs" src="https://github-readme-stats.vercel.app/api/top-langs?username=Imran2909&amp;show_icons=true&amp;locale=en&amp;layout=compact&theme=highcontrast" "="" alt="">
+        
+        <div id="statsimg">
+        <img id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=Imran2909&show_icons=true&theme=highcontrast" alt="">
+        <img id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com?user=imran&theme=chartreuse-dark&border_radius=4.6&card_width=548" alt="">
+        </div>
+        
+        </div>
+           </div>
+    </div>
+
+
 
 </body>
 
