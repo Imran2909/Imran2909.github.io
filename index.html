@@ -68,7 +68,11 @@
             /* backdrop-filter: blur(15px); */
             background-color: #14799cde;
             scroll-behavior: smooth;
-            /* position: fixed; */
+            position: fixed;
+        }
+
+        #items>a {
+            transition: all .45s ease;
         }
 
         #items {
@@ -85,6 +89,11 @@
             color: rgb(255, 255, 255);
             letter-spacing: 0.05em;
             transition: 0.5s;
+        }
+
+        #items>h3> a{
+            transition: all .45s ease;
+
         }
 
         #nav {
@@ -142,7 +151,7 @@
             /* border: 1px solid red; */
             margin-bottom: 40px;
             display: flex;
-            padding-top: 11px;
+            padding-top: 110px;
             justify-content: space-between;
         }
 
@@ -513,18 +522,20 @@
         .mailicon {
             color: #878b88;
         }
-        
+
         .mailicon:hover {
             color: #ce6342;
             transition: 0.5s;
         }
-        #fx{
+
+        #fx {
             display: flex;
             /* border: 1px solid black; */
             height: 66px;
             margin-top: -30px;
             margin-bottom: 30px;
         }
+
         .icn {
             width: 30px;
         }
@@ -532,120 +543,120 @@
 
 
 
-        
-#contact {
-    background-color: #101010;
-}
 
-.contact-left {
-    flex-basis: 35%;
-}
+        #contact {
+            background-color: #101010;
+        }
 
-.contact-right {
-    flex-basis: 60%;
-}
+        .contact-left {
+            flex-basis: 35%;
+        }
 
-.contact-left p {
-    margin-top: 30px;
-}
+        .contact-right {
+            flex-basis: 60%;
+        }
 
-.contact-left p i {
-    color: #ff004f;
-    margin-right: 15px;
-    font-size: 25px;
-}
+        .contact-left p {
+            margin-top: 30px;
+        }
 
-.social-icons {
-    margin-top: 30px;
+        .contact-left p i {
+            color: #ff004f;
+            margin-right: 15px;
+            font-size: 25px;
+        }
 
-}
+        .social-icons {
+            margin-top: 30px;
 
-a {
-    text-decoration: none;
-    color: #fff;
-}
+        }
 
-.social-icons a {
-    text-decoration: none;
-    font-size: 30px;
-    margin-right: 15px;
-    color: #ababab;
-    display: inline-block;
-    transition: transform 0.5s;
-}
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
 
-.social-icons a:hover {
-    color: #ff004f;
-    transform: translateY(-5px);
-}
+        .social-icons a {
+            text-decoration: none;
+            font-size: 30px;
+            margin-right: 15px;
+            color: #ababab;
+            display: inline-block;
+            transition: transform 0.5s;
+        }
 
-.contact-right form {
-    width: 100%;
-}
+        .social-icons a:hover {
+            color: #ff004f;
+            transform: translateY(-5px);
+        }
 
-form input,
-form textarea {
+        .contact-right form {
+            width: 100%;
+        }
 
-    width: 100%;
-    border: 0;
-    outline: none;
-    background: #262626;
-    padding: 15px;
-    margin: 15px 0;
-    color: white;
-    font-size: 18px;
-    border-radius: 6px;
-}
+        form input,
+        form textarea {
 
-.btn2 {
-    display: inline-block;
-    background-color: #3d95c9;
-    color: #fff;
-    border: 1px solid #3d95c9;
-    font-size: 18px;
-    padding: 14px 60px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    cursor: pointer;
-}
+            width: 100%;
+            border: 0;
+            outline: none;
+            background: #262626;
+            padding: 15px;
+            margin: 15px 0;
+            color: white;
+            font-size: 18px;
+            border-radius: 6px;
+        }
 
-.copyright {
-    width: 100%;
-    text-align: center;
-    padding: 25px 0;
-    background: #262626;
-    font-weight: 300;
-    margin-top: 20px;
-}
+        .btn2 {
+            display: inline-block;
+            background-color: #3d95c9;
+            color: #fff;
+            border: 1px solid #3d95c9;
+            font-size: 18px;
+            padding: 14px 60px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
 
-.copyright i {
-    color: #ff004f;
-}
+        .copyright {
+            width: 100%;
+            text-align: center;
+            padding: 25px 0;
+            background: #262626;
+            font-weight: 300;
+            margin-top: 20px;
+        }
 
-
-
-nav .fas {
-    display: none;
-}
+        .copyright i {
+            color: #ff004f;
+        }
 
 
 
- #cont2{
-    /* border: 1px solid rgb(20, 12, 12); */
-    width: 53%;
-    margin-left: 4%;
- }
-#final{
-    /* border: 1px solid red; */
-    /* width: 80%; */
-    margin: auto;
-    height: 30px;
-    padding-top: 10px;
-    color: #dbd5d5;
-    text-align: center;
-    background-color: #333232;
-}
+        nav .fas {
+            display: none;
+        }
 
+
+
+        #cont2 {
+            /* border: 1px solid rgb(20, 12, 12); */
+            width: 53%;
+            margin-left: 4%;
+        }
+
+        #final {
+            /* border: 1px solid red; */
+            /* width: 80%; */
+            margin: auto;
+            height: 30px;
+            padding-top: 10px;
+            color: #dbd5d5;
+            text-align: center;
+            background-color: #333232;
+        }
     </style>
     <!-- <script src="float-panel.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -662,13 +673,13 @@ nav .fas {
                     <h3 style="background-color: #14799cde;">Imran Sutar</h3>
                 </div>
                 <div id="items">
-                    <h3 id="home"> <a href="#intro" class="nav-link home">Home</a> </h3>
+                    <h3 id="home"> <a href="" class="nav-link home">Home</a> </h3>
                     <h3 id="about" class="about section"> <a href="#user-detail-intro" class="nav-link about"> About</a>
                     </h3>
-                    <h3 id="skills"> <a href="#learns" class="nav-link skills">Skills</a> </h3>
-                    <h3 id="projects"> <a href="#projectsall" class="nav-link projects">Projects</a> </h3>
-                    <h3 id="github"> <a href="#gitall" class="nav-link github">github</a> </h3>
-                    <h3 id="contact"> <a href="#contacts" class="nav-link contact">Contact</a> </h3>
+                    <h3 id="skills"> <a href="" class="nav-link skills">Skills</a> </h3>
+                    <h3 id="projects"> <a href="" class="nav-link projects">Projects</a> </h3>
+                    <h3 id="github"> <a href="" class="nav-link github">github</a> </h3>
+                    <h3 id="contact"> <a href="" class="nav-link contact">Contact</a> </h3>
                 </div>
                 <div id="resume" class="nav-link resume" style="background-color: #147293de;">
                     <a href="/files/Imran_Sutar_Resume.pdf" class="nav-link resume" id="resume-button-1" download="">
@@ -739,7 +750,7 @@ nav .fas {
         <div id="learns" data-aos="fade-right" data-aos-duration='1900'>
 
             <div id="title-skill">
-                <h1 id="me"> SKILLS</h1>
+                <h1 id="me" > SKILLS</h1>
             </div>
             <div id="all-skills" class="scrol">
 
@@ -917,11 +928,13 @@ nav .fas {
                 </div>
                 <div class="projectlinks">
                     <br>
-                    <button id="gitt" class="nyus"  >
-                        <a target="_blank" style="background-color: rgb(255, 0, 0);" href="https://github.com/Imran2909/puzzled-number-9667"
+                    <button id="gitt" class="nyus">
+                        <a target="_blank" style="background-color: rgb(255, 0, 0);"
+                            href="https://github.com/Imran2909/puzzled-number-9667"
                             class="project-github-link">Github</a></button>
                     <button id="deployment" class="nyus">
-                        <a target="_blank" style="background-color: red;"  href="https://starlit-croissant-41a86a.netlify.app/"
+                        <a target="_blank" style="background-color: red;"
+                            href="https://starlit-croissant-41a86a.netlify.app/"
                             class="project-deployed-link">Deployed</a></button>
                 </div>
             </div>
@@ -949,11 +962,12 @@ nav .fas {
                 </div>
                 <div class="projectlinks">
                     <br>
-                    <button id="gitt" style="background-color: red;"  class="nyus">
+                    <button id="gitt" style="background-color: red;" class="nyus">
                         <a target="_blank" href="https://github.com/Imran2909/enormous-step-3337"
                             class="project-github-link">Github</a></button>
                     <button id="deployment" class="nyus">
-                        <a target="_blank" style="background-color: red;"  href="https://calm-medovik-08f3fc.netlify.app/home.html"
+                        <a target="_blank" style="background-color: red;"
+                            href="https://calm-medovik-08f3fc.netlify.app/home.html"
                             class="project-deployed-link">Deployed</a></button>
                 </div>
             </div>
@@ -981,10 +995,10 @@ nav .fas {
                 </div>
                 <div class="projectlinks">
                     <br>
-                    <button id="gitt" style="background-color: red;"  class="nyus">
+                    <button id="gitt" style="background-color: red;" class="nyus">
                         <a target="_blank" href="https://github.com/Imran2909/troubled-snail-1304"
                             class="project-github-link">Github</a></button>
-                    <button id="deployment" style="background-color: red;"  class="nyus">
+                    <button id="deployment" style="background-color: red;" class="nyus">
                         <a target="_blank" href="https://comforting-scone-2ea99b.netlify.app/"
                             class="project-deployed-link">Deployed</a></button>
                 </div>
@@ -1015,10 +1029,10 @@ nav .fas {
                 </div>
                 <div class="projectlinks">
                     <br>
-                    <button id="gitt"  style="background-color: red;" class="nyus">
+                    <button id="gitt" style="background-color: red;" class="nyus">
                         <a target="_blank" href="https://github.com/Amitdevda/paltry-camp-142"
                             class="project-github-link">Github</a></button>
-                    <button id="deployment" style="background-color: red;"  class="nyus">
+                    <button id="deployment" style="background-color: red;" class="nyus">
                         <a target="_blank" href="https://glittering-jelly-591cd2.netlify.app/"
                             class="project-deployed-link">Deployed</a></button>
                 </div>
@@ -1044,7 +1058,7 @@ nav .fas {
     </div>
     </div>
 
-    <div data-aos="flip-up" data-aos-duration='1900' class="react-activity-calendar"
+    <div data-aos=" flip-up" data-aos-duration='1900' class="react-activity-calendar"
                     style=" background-color: rgb(255, 255, 255); width: 80%; margin: auto; ">
                 <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
                 <link rel="stylesheet"
@@ -1064,7 +1078,7 @@ nav .fas {
             <h1 id="ech" style="margin-top: 150px;">CONTACT</h1>
 
             <div id="contacts">
-                <div id="cont"  data-aos="slide-right" data-aos-duration='1900'>
+                <div id="cont" data-aos="slide-right" data-aos-duration='1900'>
                     <h1 style="margin-bottom: 40px; margin-top: 20px; color: #ffffff;">Contact Me !!!</h1>
 
                     <div id="fx">
@@ -1081,9 +1095,9 @@ nav .fas {
 
                     <div id="fx">
                         <div id="mael">
-                                <ion-icon class="mailicon"
+                            <ion-icon class="mailicon"
                                 style="width: 40px;  height: 40px; margin-right: 30px; margin-top: 0px;" class="icn"
-                                 name="logo-whatsapp"></ion-icon>
+                                name="logo-whatsapp"></ion-icon>
                         </div>
                         <a href="https://wa.me/+919370093936"
                             style="text-decoration: none; color: #38b0d8de; font-weight: 600; font-size: 24px; margin-top: 33px;"
@@ -1118,33 +1132,34 @@ nav .fas {
 
                 </div>
 
-                <div id="cont2"  data-aos="slide-left" data-aos-duration='1900'>
+                <div id="cont2" data-aos="slide-left" data-aos-duration='1900'>
 
                     <form name="submit-to-google-sheet">
-        
+
                         <input type="text" name="name" placeholder="Your Name" required="">
                         <br>
                         <input type="email" name="email" placeholder="Your Email" required="">
                         <br>
-                        <textarea name="message" rows="6" placeholder="Your Message" style="resize:none;" required=""></textarea>
+                        <textarea name="message" rows="6" placeholder="Your Message" style="resize:none;"
+                            required=""></textarea>
                         <br>
                         <button type="submit" class="btn2">Submit</button>
-            
-                      </form>
+
+                    </form>
                 </div>
 
             </div>
 
-           <div id="final">
-            Thank you for visiting, hope you liked this. ❤️ from Imran
-           </div>
+            <div id="final">
+                Thank you for visiting, hope you liked this. ❤️ from Imran
+            </div>
 
-            
+
 </body>
 
 </html>
 
-
+<!-- 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
 
@@ -1203,4 +1218,4 @@ nav .fas {
         css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
         document.body.appendChild(css);
     };
-</script>
+</script> -->
