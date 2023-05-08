@@ -1,369 +1,1232 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PortFolio</title>
-    
-    <link rel="stylesheet" href="/index.css">
-    <link rel="stylesheet"
-  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href=" ">
+    <style>
+        * {
+            /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+            margin: 0px;
+            background-color: #34465D;
+        }
 
- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-<link rel="shortcut icon" type="image/png" href="images/c-alphabet-letter-logo-for-business-and-company-with-wings-and-black-and-white-grey-color-corporate-brading-and-lettering-icon-with-simple-design-vector.webp">
-<script src="https://kit.fontawesome.com/6f3f4b23f1.js" crossorigin="anonymous"></script>
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        #i1 {
+            margin-left: -6px;
+
+        }
+
+        #i1:hover {
+            width: 66px;
+            margin-right: 24px;
+            margin-top: 17px;
+            margin-left: -6px;
+            margin-bottom: -3px;
+            transition: 500ms;
+        }
+
+        #i2:hover {
+            transition: 500ms;
+            width: 66px;
+            margin-right: 27px;
+            margin-top: 17px;
+            margin-left: -3px;
+            margin-bottom: -3px;
+        }
+
+        #i3:hover {
+            width: 66px;
+            transition: 500ms;
+            margin-right: 27px;
+            margin-top: 17px;
+            margin-left: -3px;
+            margin-bottom: -3px;
+        }
+
+        #i4:hover {
+            width: 66px;
+            margin-right: 27px;
+            margin-top: 17px;
+            transition: 500ms;
+            margin-left: -3px;
+            margin-bottom: -3px;
+        }
+
+
+        #nav-menu {
+            /* border: 1px solid red; */
+            /* position: fixed; */
+            top: 0px;
+            width: 100%;
+            margin-bottom: 60px;
+            height: 60px;
+            /* backdrop-filter: blur(15px); */
+            background-color: #14799cde;
+            scroll-behavior: smooth;
+            position: fixed;
+        }
+
+        #items>a {
+            transition: all .45s ease;
+        }
+
+        #items {
+            /* border: 1px solid black; */
+            height: 25px;
+            display: flex;
+            width: 40%;
+            justify-content: space-between;
+            margin-top: 17px;
+            background: transparent;
+        }
+
+        #items>h3>a:hover {
+            color: rgb(255, 255, 255);
+            letter-spacing: 0.05em;
+            transition: 0.5s;
+        }
+
+        #items>h3>a {
+            transition: all .45s ease;
+
+        }
+
+        #nav {
+            /* border: 1px solid gold; */
+            width: 95%;
+            margin: auto;
+            background: transparent;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #user-detail-name {
+            border: 1px solid green;
+            height: 60px;
+            color: rgb(255, 255, 255);
+            background-color: #14799cde;
+            height: 25px;
+            margin-top: 16px;
+        }
+
+        #user-detail-name>h3 {
+            font-weight: 100;
+            background-color: #14799cde;
+        }
+
+        #items>h3>a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            margin-bottom: -10px;
+            font-weight: 200;
+            background: transparent;
+        }
+
+        #resume {
+            background-color: #43464bde;
+            border: none;
+            /* background-color: white; */
+            /* border: 1px solid purple; */
+        }
+
+        #resumebut {
+            color: rgb(255, 255, 255);
+            background-color: #43464bde;
+            border: none;
+            font-size: 18px;
+            background-color: rgb(255, 63, 63);
+            margin-top: 14px;
+            width: 100px;
+            height: 30px;
+            border: none;
+            border-radius: 6px;
+        }
+
+        #intro {
+            /* border: 1px solid red; */
+            margin-bottom: 40px;
+            display: flex;
+            padding-top: 110px;
+            justify-content: space-between;
+        }
+
+        #pic {
+            /* border: 3px solid rgb(255, 72, 0); */
+            width: 22%;
+            position: relative;
+            margin-left: 100px;
+            height: 360px;
+            /* box-shadow: rgba(255, 255, 255, 0.25) 0px 14px 28px, rgba(255, 255, 255, 0.22) 0px 10px 10px; */
+            border-radius: 0px 30px 0px 30px;
+        }
+
+        #foto {
+            width: 100%;
+            border-radius: 0px 30px 0px 30px;
+        }
+
+        #detail {
+            /* border: 1px solid black; */
+            height: 210px;
+            width: 900px;
+            /* background-color: #ce3635; */
+            text-align: center;
+            color: #fff;
+            padding-top: 10em;
+        }
+
+        #name {
+            font-size: 3.5em;
+            line-height: 1.2;
+            font-weight: bold;
+            margin-bottom: 10px;
+            margin-top: -100px;
+        }
+
+        #items>h3 {
+            background: transparent;
+            color: white;
+        }
+
+
+        #user-detail-name>h3 {
+            background-color: #43464bde;
+            color: white;
+        }
+
+        #user-detail-name {
+            background-color: #43464bde;
+            border: none;
+        }
+
+        #desc {
+            font-size: 1.4rem;
+            font-weight: initial;
+            margin-top: 40px;
+        }
+
+        #user-detail-intro {
+            /* border: 1px solid red; */
+            height: auto;
+            /* display: flex; */
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        #aboutme {
+            /* border: 1px solid black; */
+            width: 80%;
+            height: 300px;
+            margin-left: 10%;
+            color: #fff;
+            /* align-items: center; */
+            margin-top: 140px;
+            /* margin-bottom:40px; */
+        }
+
+        #connect {
+            margin-top: 30px;
+            /* border: 1px solid black; */
+            color: #fff;
+            width: 30%;
+            margin-left: 100px;
+        }
+
+        .imeg {
+            width: 60px;
+            background-color: white;
+            border-radius: 55%;
+            border: 2px solid rgb(255, 255, 255);
+            margin-top: 50px;
+            margin-right: 30px;
+        }
+
+        .imeg:hover {
+            background-color: #4b6e3d;
+            border-radius: 2px solid #4b89c4;
+            /* transition: 0.5s; */
+            cursor: pointer;
+        }
+
+        #resumebut2 {
+            height: 50px;
+            width: 150px;
+            font-size: 30px;
+            margin-top: 50px;
+            color: #fff;
+            background-color: red;
+            border-radius: 10px;
+            border: none;
+        }
+
+        #resumebut2:hover {
+            height: 60px;
+            width: 170px;
+            margin-top: 50px;
+            font-size: 33px;
+            cursor: pointer;
+            transition: 500ms;
+            color: #fff;
+            background-color: rgb(71, 114, 62);
+            font-weight: bold;
+        }
+
+        #inh {
+            margin-top: 20px;
+            font-weight: 400;
+        }
+
+        #learns {
+            /* border: 1px solid red; */
+            height: 400px;
+            margin-top: 60px;
+            /* width: 700px; */
+        }
+
+        #acc {
+            margin-top: -140px;
+            margin-left: -622px;
+
+        }
+
+        #bot {
+            display: flex;
+            margin: -105px 33px -10px 265px;
+            /* margin-top: 20px; */
+        }
+
+        #resumebut2 {
+            margin: 60px -688px 0px 0px;
+        }
+
+        #skl {
+            color: #fff;
+        }
+
+        #title-skill {
+            /* border: 1px solid red; */
+            /* height: 100px; */
+            width: 80%;
+            margin-left: 10%;
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        #all-skills {
+            /* border: 1px solid; */
+            width: 80%;
+            margin-left: 10%;
+            margin-top: 60px;
+            height: 160px;
+            display: flex;
+            gap: 30px;
+            overflow: hidden;
+            /* margin-bottom: -40px; */
+        }
+
+        .skills-card {
+            animation: scroll 25s linear infinite;
+            /* border: 1px solid; */
+            width: 120px;
+            height: 130px;
+        }
+
+        /* @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(calc(-200px * 9));
+            }
+        } */
+
+        /* .scrol::-webkit-scrollbar{
+            width: 0;
+        } */
+
+        .skills-card-name {
+            color: rgb(13, 204, 172);
+            /* margin-left: 33px; */
+            text-align: center;
+            margin-top: -8px;
+            font-size: 20px;
+        }
+
+        #big {
+            /* border: 1px solid red; */
+            width: 110px;
+            height: 100px;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+
+        #big>img {
+            width: 80%;
+            margin: 8px 0px 0px 10px;
+        }
+
+        #big>img:hover {
+            width: 90%;
+            margin-top: 2px;
+            margin-left: 5px;
+            transition: 500ms;
+        }
+
+        #me {
+            border: 2px solid red;
+            padding-bottom: 6px;
+            color: #fff;
+            margin-bottom: 0px;
+        }
+
+        #mes {
+            color: #fff;
+            padding-bottom: 6px;
+            width: 80%;
+            text-align: center;
+            margin: auto;
+            border: 2px solid red;
+            margin-top: 10px;
+            margin-bottom: 80px;
+        }
+
+        #projectsall {
+            /* border: 1px solid rgb(221, 22, 22); */
+            width: 80%;
+            display: flex;
+            margin: auto;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        #projectsall>div>img {
+            width: 100%;
+            height: 250px;
+        }
+
+        .project-card {
+            border-radius: 10px;
+            width: 48%;
+            box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+            height: 740px;
+            margin-bottom: 100px;
+        }
+
+        #proimg {
+            width: 91.5%;
+            /* border: 1px solid blue; */
+            height: 300px;
+            margin: 20px;
+            margin-top: 30px;
+        }
+
+        #proimg>img {
+            width: 100%;
+            height: 300px;
+        }
+
+        .project-title {
+            font-size: 30px;
+            font-weight: bolder;
+            color: rgb(13, 204, 172);
+            margin: -8px 0px 0px 20px;
+        }
+
+        #inp,
+        #features,
+        .techstack,
+        #area {
+            color: rgb(13, 204, 172);
+            margin: 6px 0px 0px 20px;
+        }
+
+        #gitt,
+        #deployment {
+            width: 110px;
+            height: 40px;
+            margin-left: 20px;
+            background-color: rgb(255, 0, 0);
+            border: none;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        #gitt:hover,
+        #deployment:hover {
+            height: 42px;
+            width: 114px;
+            margin-left: 18px;
+            cursor: pointer;
+            transition: 500ms;
+            color: #fff;
+
+        }
+
+        .nyus>a {
+            /* background-color: rgb(255, 0, 0); */
+            margin-top: -80px;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: red;
+        }
+
+        #gits,
+        #ech {
+            color: #fff;
+            padding-bottom: 6px;
+            width: 80%;
+            text-align: center;
+            margin: auto;
+            border: 2px solid red;
+            margin-top: -10px;
+            margin-bottom: 110px;
+        }
+
+        #allstat {
+            /* border: 1px solid red; */
+            width: 80%;
+            margin: auto;
+        }
+
+        #contacts {
+            /* border: 1px solid red; */
+            /* height: 600px; */
+            width: 80%;
+            margin: auto;
+            margin-top: -50px;
+            display: flex;
+        }
+
+        #cont {
+            /* border: 1px solid; */
+            height: 500px;
+            width: 40%;
+            /* color: rgb(13, 204, 172); */
+            /* color: rgb(0, 255, 13); */
+        }
+
+        #mael {
+            /* width: 100%; */
+            height: 60px;
+            margin-top: 30px;
+        }
+
+        .mailicon {
+            color: #878b88;
+        }
+
+        .mailicon:hover {
+            color: #ce6342;
+            transition: 0.5s;
+        }
+
+        #fx {
+            display: flex;
+            /* border: 1px solid black; */
+            height: 66px;
+            margin-top: -30px;
+            margin-bottom: 30px;
+        }
+
+        .icn {
+            width: 30px;
+        }
+
+
+
+
+
+        #contact {
+            background-color: #101010;
+        }
+
+        .contact-left {
+            flex-basis: 35%;
+        }
+
+        .contact-right {
+            flex-basis: 60%;
+        }
+
+        .contact-left p {
+            margin-top: 30px;
+        }
+
+        .contact-left p i {
+            color: #ff004f;
+            margin-right: 15px;
+            font-size: 25px;
+        }
+
+        .social-icons {
+            margin-top: 30px;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            font-size: 30px;
+            margin-right: 15px;
+            color: #ababab;
+            display: inline-block;
+            transition: transform 0.5s;
+        }
+
+        .social-icons a:hover {
+            color: #ff004f;
+            transform: translateY(-5px);
+        }
+
+        .contact-right form {
+            width: 100%;
+        }
+
+        form input,
+        form textarea {
+
+            width: 100%;
+            border: 0;
+            outline: none;
+            background: #262626;
+            padding: 15px;
+            margin: 15px 0;
+            color: white;
+            font-size: 18px;
+            border-radius: 6px;
+        }
+
+        .btn2 {
+            display: inline-block;
+            background-color: #3d95c9;
+            color: #fff;
+            border: 1px solid #3d95c9;
+            font-size: 18px;
+            padding: 14px 60px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .copyright {
+            width: 100%;
+            text-align: center;
+            padding: 25px 0;
+            background: #262626;
+            font-weight: 300;
+            margin-top: 20px;
+        }
+
+        .copyright i {
+            color: #ff004f;
+        }
+
+
+
+        nav .fas {
+            display: none;
+        }
+
+
+
+        #cont2 {
+            /* border: 1px solid rgb(20, 12, 12); */
+            width: 53%;
+            margin-left: 4%;
+        }
+
+        #final {
+            /* border: 1px solid red; */
+            /* width: 80%; */
+            margin: auto;
+            height: 30px;
+            padding-top: 10px;
+            color: #dbd5d5;
+            text-align: center;
+            background-color: #333232;
+        }
+    </style>
+    <!-- <script src="float-panel.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 </head>
-<body> 
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> -->
 
+<body>
+    <div>
+        <div id="nav-menu">
+            <div id="nav">
+                <div id="user-detail-name">
+                    <h3 style="background-color: #14799cde;">Imran Sutar</h3>
+                </div>
+                <div id="items">
+                    <h3 id="home"> <a href="" class="nav-link home">Home</a> </h3>
+                    <h3 id="about" class="about section"> <a href="#user-detail-intro" class="nav-link about"> About</a>
+                    </h3>
+                    <h3 id="skills"> <a href="" class="nav-link skills">Skills</a> </h3>
+                    <h3 id="projects"> <a href="" class="nav-link projects">Projects</a> </h3>
+                    <h3 id="github"> <a href="" class="nav-link github">github</a> </h3>
+                    <h3 id="contact"> <a href="" class="nav-link contact">Contact</a> </h3>
+                </div>
+                <div id="resume" class="nav-link resume" style="background-color: #147293de;">
+                    <a href="/files/Imran_Sutar_Resume.pdf" class="nav-link resume" id="resume-button-1" download="">
+                        <button id="resumebut" id="resume-button-1"
+                            onclick="window.open('https://drive.google.com/file/d/1pw6PtoYD1MdC9AsgNPJN3BdC0yl-ZzYg/view?usp=share_link')">Resume</button>
+                        <i class="fa fa-download"> </i></a>
 
-    <!-- header design -->
-    <header id="nav-menu">
-        <a href="#" class="logo"> Imran  <span> Sutar </span></a>
-
-        <ul class="navlist">
-            <li><a href="#home" class="active"> Home</a></li>
-            <li><a href="#about"> About</a></li>
-            <li><a href="#skills"> Skills</a></li>
-            <li><a href="#projects"> Projects</a></li>
-            <li><a href="#githubs" > GitHub</a></li>
-            <li><a href="#contact"> Contact</a></li>
-            <button id="resume-button-1">
-                <a  href="/files/Imran_Sutar_Resume.pdf" target="_blank" download=""
-                id="resume-link-1" class="nav-link resume"   onclick="window.open('https://drive.google.com/file/d/1pw6PtoYD1MdC9AsgNPJN3BdC0yl-ZzYg/view?usp=share_link')"  >Resume</a>
-            </button> 
-            
-            </ul>
-
-        </ul>
-
-        <div class="bx bx-menu" id="menu-icon">
-
-        </div>
-    </header>
-    <!-- home section design -->
-    <section id="home" >
-        <div class="nav-link home">
-            <div class="slide">
-                <span class="one">Hello</span>
-                <span class="two">I'm</span>
+                </div>
             </div>
-            <h1 id="user-detail-name">Imran Sutar</h1>
-            <h3 id="user-detail-skill">NodeJs Backend <span>Developer.</span></h3>
-            <!-- <p>Lorem ipsum dolor olorum earum magni veniam! Iste hic minima minus cumque libero.</p> -->
-            <br>
-            <button id="resume-button-2">
-                <a href="/files/Imran_Sutar_Resume.pdf" download=""
-                id="resume-link-2" onclick="window.open('https://drive.google.com/file/d/1pw6PtoYD1MdC9AsgNPJN3BdC0yl-ZzYg/view?usp=share_link')"><span><i class='bx bx-download' ></i></span>Resume</a>
-            </button>
-        </div>
-    
-
-    </section>
-
-    <!-- --------about section design  -->
-    <section class="about section" id="about">
-        <!-- <div class="nav-link-about"> -->
-        <div class="about-img">
-            <img class="home-img" src="/Picture.jpeg" alt="">
         </div>
 
-        <div class="nav-link about">
-            <h1>About <span>Me</span></h1>
-            <h2 id="user-detail-name">I'm <span>Imran Sutar</span> from Solapur, Maharashtra</h2>
-            <h4>NodeJs Backend Developer</h4>
-            <p id="user-detail-intro"> Passionated Full stack
-                web
-                developer with the curiousity to build websites from the scratch, with the help of learned
-                tech
-                stack and  skills like Node, Javascript, ExpressJS, MongoDB, etc. and tools in optimized way.</p>
-                 <!-- <a href="#" class="btn">Netlify</a> -->
-               
+        <div id="intro" data-aos-once="false">
+            <div id="pic" data-aos-once="false" data-aos="fade-right" data-aos-duration='1900'>
+                <img src="./Picture.jpeg" alt="" id="foto" class="home-img">
             </div>
-        
-    </section>
 
-    <!-- --------Skills section design  -->
-    <section id="skills"> 
-        <div class="main-text">
-            <h2><span>My </span>Skills</h2>
-            <p>What I am Expert In</p>
+            <div id="detail" data-aos-once="false" data-aos="fade-left" data-aos-duration='1900'>
+                <h1 id="name">Hello I'm <span style="color: aqua;"> Imran Sutar</span></h1>
+                <h1>
+                    <a href="" class="typewrite" data-period="800" style="color: #fff; text-decoration: none;"
+                        data-type='[ "", "Full Stack Web Developer", "Node Backend Developer", "Emphasize on learning new tech stacks" ]'>
+                        <span class="wrap"></span>
+                    </a>
+                    <p id="desc" class="about__desc aos-init aos-animate" data-aos="fade-left"> Passionated Full stack
+                        web
+                        developer with the curiousity to build websites 
+                        <!-- <br> -->
+                         from the scratch, with the help of learned
+                        tech
+                        stack
+                        <!-- remove below line -->
+                        like Node.js, Express, MongoDB, Typescript, etc.
+                        
+                        and <br> tools in optimized way. </p>
+            </div>
+            </h1>
+        </div>
+
+        <!-- document.querySelector("#nav-menu > div > a.nav-link.skills") -->
+
+        <div id="user-detail-intro">
+
+            <div id="aboutme" data-aos="fade-down" data-aos-duration='1900'>
+                <h1 id="me">ABOUT ME</h1> <br><br>
+                <h3 id="inh">Hello Everyone, My name is Imran Sutar and I am from Solapur, Maharashtra (India). I
+                    completed
+                    my bachelor's of Enginnering, and after that I joined Masai School full time course to become a full
+                    stack web developer. Curious to solve new problems , having apetite to learn a new tech stack like
+                    Node, Javascript, ExpressJS, MongoDB, etc. Like
+                    to
+                    work in team and always looking for seeking the knowledge. </h3>
+            </div>
+            <div id="bot" data-aos="fade-left" data-aos-duration='1900'>
+                <div>
+                    <a href="" id="contact-github"> <img class="imeg" id="i1"
+                            src="https://cdn-icons-png.flaticon.com/512/1051/1051326.png" alt=""> </a>
+                    <a href="" id="contact-linkedin"> <img class="imeg" id="i2"
+                            src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png" alt=""> </a>
+                    <a href="" id="contact-phone"> <img class="imeg" id="i3"
+                            src="https://cdn-icons-png.flaticon.com/512/455/455705.png" alt=""> </a>
+                    <a href="" id="contact-email"> <img class="imeg" id="i4"
+                            src="https://cdn-icons-png.flaticon.com/512/3178/3178158.png" alt=""> </a>
+                </div>
+                <div id="res">
+                    <div id="resumea" class="nav-link resume">
+                        <a href="Imran_Sutar_Resume.pdf" class="nav-link resume" id="resume-button-1" download="">
+                            <button id="resumebut2" id="resume-button-2"
+                                onclick="window.open('https://drive.google.com/file/d/1pw6PtoYD1MdC9AsgNPJN3BdC0yl-ZzYg/view?usp=share_link')">Resume</button>
+                            <i class="fa fa-download"> </i></a>
+                    </div>
+                </div>
+            </div>
+        </div> <br>
+
+        <!-- Skills -->
+        <div id="learns" data-aos="fade-right" data-aos-duration='1900'>
+
+            <div id="title-skill">
+                <h1 id="me"> SKILLS</h1>
+            </div>
+
+            <div id="all-skills" class="scrol">
+                <div class="skills-card">
+                    <div id="big">
+                        <img class="skills-card-img" src="https://img.icons8.com/color/256/html-5.png" alt="">
+                    </div>
+                    <h3 class="skills-card-name">HTML</h3>
+                </div>
+
+                <div class="skills-card">
+                    <div id="big">
+                        <img class="skills-card-img" src="https://img.icons8.com/color/256/css3.png" alt="">
+                    </div>
+                    <h3 class="skills-card-name">CSS</h3>
+                </div>
+
+                <div class="skills-card">
+                    <div id="big">
+                        <img class="skills-card-img" src="https://img.icons8.com/color/256/javascript.png" alt="">
+                    </div>
+                    <h3 class="skills-card-name">JavaScript</h3>
+                </div>
+
+                <div class="skills-card">
+                    <div id="big">
+                        <img class="skills-card-img" src="https://img.icons8.com/fluency/256/node-js.png" alt="">
+                    </div>
+                    <h3 class="skills-card-name">Node.js</h3>
+                </div>
+
+                <div class="skills-card">
+                    <div id="big">
+                        <img class="skills-card-img" src="https://img.icons8.com/ios/256/express-js.png" alt="">
+                    </div>
+                    <h3 class="skills-card-name">Express.js</h3>
+                </div>
+
+                <div class="skills-card">
+                    <div id="big">
+                        <img class="skills-card-img" src="https://img.icons8.com/color/256/mongodb.png" alt="">
+                    </div>
+                    <h3 class="skills-card-name">MongoDb</h3>
+                </div>
+
+                <div class="skills-card">
+                    <div id="big">
+                        <img class="skills-card-img" src="https://img.icons8.com/fluency/256/mysql-logo.png" alt="">
+                    </div>
+                    <h3 class="skills-card-name">MySQL</h3>
+                </div>
+
+                <div class="skills-card">
+                    <div id="big">
+                        <img class="skills-card-img" src="https://img.icons8.com/officel/256/react.png" alt="">
+                    </div>
+                    <h3 class="skills-card-name">React</h3>
+                </div>
+
+                <div class="skills-card">
+                    <div id="big">
+                        <img class="skills-card-img"
+                            src="https://gaurav-dev-portfolio.netlify.app/static/media/dsa.0735e929.png" alt="">
+                    </div>
+                    <h3 class="skills-card-name">DSA</h3>
+                </div>
+
+                <div class="skills-card">
+                    <div id="big">
+                        <img class="skills-card-img" src="https://img.icons8.com/color/256/redis.png" alt="">
+                    </div>
+                    <h3 class="skills-card-name">Redis</h3>
+                </div>
+
+                <div class="skills-card">
+                    <div id="big">
+                        <img class="skills-card-img" src="https://img.icons8.com/color/256/git.png" alt="">
+                    </div>
+                    <h3 class="skills-card-name">Git</h3>
+                </div>
+
+                <div class="skills-card">
+                    <div id="big">
+                        <img class="skills-card-img" src="https://img.icons8.com/windows/256/github.png" alt="">
+                    </div>
+                    <h3 class="skills-card-name">GitHub</h3>
+                </div>
+
+                <div class="skills-card">
+                    <div id="big">
+                        <img class="skills-card-img" src="https://img.icons8.com/fluency/256/typescript--v2.png" alt="">
+                    </div>
+                    <h3 class="skills-card-name">Typescript</h3>
+                </div>
+
+                <div class="skills-card">
+                    <div id="big">
+                        <img class="skills-card-img" src="https://img.icons8.com/color/256/bootstrap.png" alt="">
+                    </div>
+                    <h3 class="skills-card-name">Bootstrap</h3>
+                </div>
+
+                <div class="skills-card">
+                    <div id="big">
+                        <img class="skills-card-img" src="https://img.icons8.com/color/256/visual-studio--v2.png"
+                            alt="">
+                    </div>
+                    <h3 class="skills-card-name">VS Code</h3>
+                </div>
+
+                <div class="skills-card">
+                    <div id="big">
+                        <img class="skills-card-img"
+                            src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/256/external-postman-is-the-only-complete-api-development-environment-logo-shadow-tal-revivo.png"
+                            alt="">
+                    </div>
+                    <h3 class="skills-card-name">Postman</h3>
+                </div>
+
+                <div class="skills-card">
+                    <div id="big">
+                        <img class="skills-card-img"
+                            src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/256/external-netlify-a-cloud-computing-company-that-offers-hosting-and-serverless-backend-services-for-static-websites-logo-color-tal-revivo.png"
+                            alt="">
+                    </div>
+                    <h3 class="skills-card-name">Netlify</h3>
+                </div>
+
+                <div class="skills-card">
+                    <div id="big">
+                        <img class="skills-card-img" src="https://avatars.githubusercontent.com/u/77067997?s=200&v=4"
+                            alt="">
+                    </div>
+                    <h3 class="skills-card-name">Cyclic</h3>
+                </div>
+
+                <div class="skills-card">
+                    <div id="big">
+                        <img class="skills-card-img" src="https://img.icons8.com/color/256/amazon-web-services.png"
+                            alt="">
+                    </div>
+                    <h3 class="skills-card-name">AWS</h3>
+                </div>
+
+
+            </div>
 
         </div>
 
-        <div class="nav-link skills" id="skills-part">
-            <div class="skills-card">
-                <div class="skills-card-img">
-                    <i style="font-size: 100px;" class='bx bxl-nodejs' ></i>
+         <!-- Github -->
+    <h1 id="gits"> GITHUB </h1>
+    <div id="gitall">
+        <div id="stats">
+            <h2 class="mid"></h2>
+            <div id="allstat">
+                <img data-aos="flip-left" data-aos-duration='1900' style="margin-left: 50px;" id="github-stats-card"
+                src="https://github-readme-stats.vercel.app/api?username=Imran2909&show_icons=true&theme=highcontrast"
+                alt=""> <br>
+                <img data-aos="zoom-out-down" data-aos-duration='1900' style="margin:20px 420px;" id="github-top-langs"
+                src="https://github-readme-stats.vercel.app/api/top-langs?username=Imran2909&amp;show_icons=true&amp;locale=en&amp;layout=compact&theme=highcontrast" "="" alt="">
+                <img data-aos="flip-right" data-aos-duration='1900' id="github-streak-stats"
+                    src="https://github-readme-streak-stats.herokuapp.com?user=Imran2909&theme=chartreuse-dark&border_radius=4.6&card_width=548"
+                    alt="">
+        </div>
+    </div>
+    </div>
+
+
+        <!-- Projects -->
+        <h1 id="mes">PROJECTS</h1>
+        <div id="projectsall">
+
+            <div class="project-card" data-aos="slide-left" data-aos-duration='1900'>
+                <div id="proimg">
+                    <img src="./hireexpert.png" alt="">
                 </div>
-                <h3 class="skills-card-name">NodeJs</h3>
-                <!-- <p>Java is a high-level, general-purpose programming language widely used for developing  -->
-                   
-                <!-- </p>
-                <a href="#" class="read">Read more</a> -->
-            </div>
-            <div class="skills-card">
-                <div class="skills-card-img">
-                    <i style="font-size: 100px;" class='bx bxl-javascript' ></i>
+                <p class="project-title" style="color: rgb(0, 255, 13);">Hirexpert</p>
+                <div class="project-description">
+                    <p id="inp"> It's an online platform from where users can book the
+                        services of professionals for the work in which professionals are needed like carpenter,
+                        electrician, plumber, barber, etc. at their home. </p>
                 </div>
-                <h3 class="skills-card-name">JavaScript</h3>
-                <!-- <p>JavaScript is a high-level, object-oriented programming language used for creating  -->
-                   
-                <!-- </p>
-                <a href="#" class="read">Read more</a> -->
-            </div>
-            <div class="skills-card">
-                <div class="skills-card-img">
-                    <i style="font-size: 100px;" class='bx bxl-html5' ></i>
+                <div id="features" style="padding-right: 20px;">
+                    <p><b style="color: rgb(0, 255, 13);"> Features :- </b> <br> Home page | Log-In | Sign-Up | service
+                        page | booking page | Address page | OTP page | Payment page | Admin page </p>
                 </div>
-                <h3 class="skills-card-name">HTML</h3>
-                <!-- <p>HTML (Hypertext Markup Language) is a markup language used for creating web pages  -->
-                  
-                <!-- </p>
-                <a href="#" class="read">Read more</a> -->
-            </div>
-            <div class="skills-card">
-                <div class="skills-card-img">
-                    <i style="font-size: 100px;" class='bx bxl-css3' ></i>
+                <div class="techstack" style=" margin-top: 10px;" style="padding-right: 20px;">
+                    <p><b style="color: rgb(0, 255, 13);">Tech Stack :- </b> </p>
+                    <p class="project-tech-stack">HTML | CSS | JavaScript | Bootstrap</p>
                 </div>
-                <h3 class="skills-card-name">CSS</h3>
-                <!-- <p>CSS (Cascading Style Sheets) is used for describing the visual presentation of web pages. -->
-                <!-- </p>
-                <a href="#" class="read">Read more</a> -->
-            </div>
-            <div class="skills-card">
-                <div class="skills-card-img">
-                    <i style="font-size: 100px;" class='bx bxl-mongodb'  ></i>
+                <div id="area">
+                    <p><b style="color: rgb(0, 255, 13);"> Areas of responsibilities :- </b> <br> That was the
+                        individual project, so whole project is under my responsibilities </p>
                 </div>
-                <h3 class="skills-card-name">MongoDB</h3>
-                <!-- <p>MySQL is a popular open-source relational database management system  -->
-                    
-                    
-                <!-- </p>
-                <a href="#" class="read">Read more</a> -->
-            </div>
-            <div class="skills-card">
-                <div class="skills-card-img">
-                    <i style="font-size: 50px; height:100px" class='bx bxl-nodejs-Express' >ExpressJS</i>
+                <div class="projectlinks">
+                    <br>
+                    <button id="gitt" class="nyus">
+                        <a target="_blank" style="background-color: rgb(255, 0, 0);"
+                            href="https://github.com/Imran2909/puzzled-number-9667"
+                            class="project-github-link">Github</a></button>
+                    <button id="deployment" class="nyus">
+                        <a target="_blank" style="background-color: red;"
+                            href="https://starlit-croissant-41a86a.netlify.app/"
+                            class="project-deployed-link">Deployed</a></button>
                 </div>
-                <h3 class="skills-card-name">ExpressJS</h3>
-                <!-- <p>Spring Boot is a popular Java-based framework for building standalone,  -->
-                    
-                    
-                <!-- </p>
-                <a href="#" class="read">Read more</a> -->
-            </div>
-            <div class="skills-card">
-                <div class="skills-card-img">
-                    <i style="font-size: 50px; height:100px" class="bx bxl-nodejs-Express" >Socket.io</i>
-                </div>
-                <h3 class="skills-card-name">Socket.io</h3>
-                <!-- <p>Relational Database Management System is a type of database  -->
-                    
-                <!-- </p>
-                <a href="#" class="read">Read more</a> -->
             </div>
 
-            <div class="skills-card">
-                <div class="skills-card-img">
-                    <i style="font-size: 100px;" class="fa-solid fa-cubes" ></i>
+            <div class="project-card" data-aos="slide-right" data-aos-duration='1900'>
+                <div id="proimg">
+                    <img src="./Screenshot (194).png" alt="">
                 </div>
-                <h3 class="skills-card-name">DSA</h3>
-                <!-- <p>A data structure is a named location that can be used to store .   -->
-                    
-                <!-- </p>
-                <a href="#" class="read">Read more</a> -->
+                <p class="project-title" style="color: rgb(0, 255, 13);">Opell</p>
+                <div class="project-description">
+                    <p id="inp"> Opell is a online e-commerce website from where you can buy any Apple products like
+                        Iphone, Mac, Ipad, Ipods and all its accessories from anywhere at best price. </p>
+                </div>
+                <div id="features" style="padding-right: 20px;">
+                    <p><b style="color: rgb(0, 255, 13);"> Features :- </b> <br> Home page | Log-In | Sign-Up | products
+                        page | Iphone page | checkout page | payment page | OTP verification | Admin page </p>
+                </div>
+                <div class="techstack" style=" margin-top: 10px;" style="padding-right: 20px;">
+                    <p><b style="color: rgb(0, 255, 13);">Tech Stack :- </b> </p>
+                    <p class="project-tech-stack">HTML | CSS | JavaScript | Bootstrap</p>
+                </div>
+                <div id="area">
+                    <p style="padding-right: 20px;"><b style="color: rgb(0, 255, 13);"> Areas of responsibilities :-
+                        </b> <br> Design of admin page , working of admin page and working of signup and login page </p>
+                </div>
+                <div class="projectlinks">
+                    <br>
+                    <button id="gitt" style="background-color: red;" class="nyus">
+                        <a target="_blank" href="https://github.com/Imran2909/enormous-step-3337"
+                            class="project-github-link">Github</a></button>
+                    <button id="deployment" class="nyus">
+                        <a target="_blank" style="background-color: red;"
+                            href="https://calm-medovik-08f3fc.netlify.app/home.html"
+                            class="project-deployed-link">Deployed</a></button>
+                </div>
             </div>
 
+            <div class="project-card" data-aos="slide-left" data-aos-duration='1900'>
+                <div id="proimg">
+                    <img src="./Screenshot (196).png" alt="">
+                </div>
+                <p class="project-title" style="color: rgb(0, 255, 13);">Carnero</p>
+                <div class="project-description" style="margin-right: 20px;">
+                    <p id="inp"> Carnero provide any fresh non-veg item with neatly clean. </p>
+                </div>
+                <div id="features" style="padding-right: 20px;">
+                    <p><b style="color: rgb(0, 255, 13);"> Features :- </b> <br> Home page | Log-In | Sign-Up |
+                        Authentication | products page | Cart page | payment page | Admin page </p>
+                </div>
+                <div class="techstack" style=" margin-top: 10px;" style="padding-right: 20px;">
+                    <p><b style="color: rgb(0, 255, 13); padding-right: 20px; ">Tech Stack :- </b> </p>
+                    <p class="project-tech-stack" style="padding-right: 20px; "> HTML | CSS | JavaScript | Node.js |
+                        Express.js | JWT |MongoDb | Bootstrap</p>
+                </div>
+                <div id="area">
+                    <p style="padding-right: 20px;"><b style="color: rgb(0, 255, 13);"> Areas of responsibilities :-
+                        </b> <br> That was the individual project, so whole project is under my responsibilities </p>
+                </div>
+                <div class="projectlinks">
+                    <br>
+                    <button id="gitt" style="background-color: red;" class="nyus">
+                        <a target="_blank" href="https://github.com/Imran2909/troubled-snail-1304"
+                            class="project-github-link">Github</a></button>
+                    <button id="deployment" style="background-color: red;" class="nyus">
+                        <a target="_blank" href="https://comforting-scone-2ea99b.netlify.app/"
+                            class="project-deployed-link">Deployed</a></button>
+                </div>
+            </div>
+
+            <div class="project-card" data-aos="slide-right" data-aos-duration='1900'>
+                <div id="proimg">
+                    <img src="./Screenshot (199).png" alt="">
+                </div>
+                <p class="project-title" style="color: rgb(0, 255, 13);">Dexter</p>
+                <div class="project-description">
+                    <p id="inp"> Dexter is online text editor where one or more than one members can work on single
+                        project at same time. </p>
+                </div>
+                <div id="features" style="padding-right: 20px;">
+                    <p><b style="color: rgb(0, 255, 13);"> Features :- </b> <br> Home page | Log-In | OAuth |
+                        Authentication | Text editing | Creating room | Real-time chatting </p>
+                </div>
+                <div class="techstack" style=" margin-top: 10px;" style="padding-right: 20px;">
+                    <p><b style="color: rgb(0, 255, 13);">Tech Stack :- </b> </p>
+                    <p class="project-tech-stack">HTML | CSS | JavaScript | Bootstrap | Node.js | Express.js | MongoDb |
+                        Redis </p>
+                </div>
+                <div id="area">
+                    <p style="padding-right: 20px;"><b style="color: rgb(0, 255, 13);"> Areas of responsibilities :-
+                        </b> <br> Design of chat section , Creating room functionality , working of chat functionality
+                        in real-time </p>
+                </div>
+                <div class="projectlinks">
+                    <br>
+                    <button id="gitt" style="background-color: red;" class="nyus">
+                        <a target="_blank" href="https://github.com/Amitdevda/paltry-camp-142"
+                            class="project-github-link">Github</a></button>
+                    <button id="deployment" style="background-color: red;" class="nyus">
+                        <a target="_blank" href="https://glittering-jelly-591cd2.netlify.app/"
+                            class="project-deployed-link">Deployed</a></button>
+                </div>
+            </div>
 
         </div>
+    </div>
 
-    </section>
-    <!-- <----------STATS------->
-    <div class="max-width" id="githubs">
-        <div class="main-text">
-            
-            <h2><span>GitHub </span>Statistics</h2>
-<!-- CHANGE NO 2 -->
-        </div>
-        <div id="stat">
-            <div  id="github-top-langs" style="margin-top: 15px;" >
-                <img class = "ht1"  id="github-top-langs"  src='https://github-readme-stats.vercel.app/api?username=Imran2909&show_icons=true&theme=highcontrast' >
-            </div>
-            <div id="github-streak-stats" >
-                <img class ="ht1" id="github-streak-stats" src='https://github-readme-stats.vercel.app/api/top-langs?username=Imran2909&amp;show_icons=true&amp;locale=en&amp;layout=compact&theme=highcontrast' >
-            </div>
-            <div id="github-stats-card"  >
-                <img class = "ht1" id="github-stats-card" src='https://github-readme-streak-stats.herokuapp.com?user=Imran2909&theme=chartreuse-dark&border_radius=4.6&card_width=548' >
-            </div>
-        </div>
-        <!-- <div id="calendar" class="react-activity-calendar">
-          <img style="display: block; margin: auto; margin-top: 40px; width: 100%;" src="https://ghchart.rshah.org/Shahid77137" alt="Shahid77137's Github chart" />
-        </div> -->
-
-        <div class="react-activity-calendar">
-            <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+   
+    <div data-aos=" flip-up" data-aos-duration='1900' class="react-activity-calendar"
+                    style=" background-color: rgb(255, 255, 255); width: 80%; margin: auto; ">
+                <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
                 <link rel="stylesheet"
                     href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
-    
-            <div class="calendar react-activity-calenda">
-            Loading the data just for you.
+
+                <div class="calendar react-activity-calenda">
+                    Loading the data just for you.
+                </div>
+
+                <script>
+                    GitHubCalendar(".calendar", "Imran2909");
+                    // or enable responsive functionality
+                    GitHubCalendar(".calendar", "Imran2909", { responsive: true });
+                </script>
             </div>
-    
-            <script>
-            GitHubCalendar(".calendar", "Imran2909");
-            // or enable responsive functionality
-            GitHubCalendar(".calendar", "Imran2909", { responsive: true });
-            </script>
-        </div>
-  </div>   
-</section>
 
-     <!-- Project section design  -->
-     <section id="projects">
-        <div class="main-text">
-    
-            <h2><span>Latest </span>Projects</h2>
+            <h1 id="ech" style="margin-top: 150px;">CONTACT</h1>
 
-        </div>
+            <div id="contacts">
+                <div id="cont" data-aos="slide-right" data-aos-duration='1900'>
+                    <h1 style="margin-bottom: 40px; margin-top: 20px; color: #ffffff;">Contact Me !!!</h1>
 
-        <div class="nav-link projects" id="nav-link-projects">
-           
-            <div class="project-card">
-                <img src="/Screenshot (194).png" alt="">
-                <div class="layer">
-                    <h5 class="project-title">Opell</h5>
-                    <p class="project-description"> Opell is a online e-commerce website from where you can buy any Apple products like
-                        Iphone, Mac, Ipad, Ipods and all its accessories from anywhere at best price. </p>
-                    <p class="project-tech-stack">Tech-Stack</p>
-                    <div class="project-deployed-link" >
-                        <a href="https://calm-medovik-08f3fc.netlify.app/home.html" target="_blank" ><i class='bx bxl-netlify' ></i></a>
-                    </div >
-                    <div class="project-github-link" >
-                        <a href="https://github.com/Imran2909/enormous-step-3337" target="_blank" id="project-deployed-link"><i class='bx bxl-github' ></i></a>
+                    <div id="fx">
+                        <div id="mael">
+                            <ion-icon class="mailicon"
+                                style="width: 40px;  height: 40px; margin-right: 30px; margin-top: 0px;" class="icn"
+                                name="send"> </ion-icon>
+                        </div>
+                        <a href="mailto:sutarimran47@gmail.com"
+                            style="text-decoration: none; color: #38b0d8de; font-weight: 600; font-size: 24px; margin-top: 33px;"
+                            target="_blank">sutarimran47@gmail.com
+                        </a>
                     </div>
+
+                    <div id="fx">
+                        <div id="mael">
+                            <ion-icon class="mailicon"
+                                style="width: 40px;  height: 40px; margin-right: 30px; margin-top: 0px;" class="icn"
+                                name="logo-whatsapp"></ion-icon>
+                        </div>
+                        <a href="https://wa.me/+919370093936"
+                            style="text-decoration: none; color: #38b0d8de; font-weight: 600; font-size: 24px; margin-top: 33px;"
+                            target="_blank"> +91 9370093936
+                        </a>
+                    </div>
+
+                    <div id="fx">
+                        <div id="mael">
+                            <ion-icon class="mailicon"
+                                style="width: 40px;  height: 40px; margin-right: 30px; margin-top: 0px;" class="icn"
+                                name="logo-github"> </ion-icon>
+                        </div>
+                        <a href="https://github.com/Imran2909"
+                            style="text-decoration: none; color: #38b0d8de; font-weight: 600; font-size: 24px; margin-top: 33px;"
+                            target="_blank">Imran2909
+                        </a>
+                    </div>
+
+                    <div id="fx">
+                        <div id="mael">
+                            <ion-icon class="mailicon"
+                                style="width: 40px;  height: 40px; margin-right: 30px; margin-top: 0px;" class="icn"
+                                name="logo-linkedin"> </ion-icon>
+                        </div>
+                        <a href="https://www.linkedin.com/in/imran-sutar-0a858425b/"
+                            style="text-decoration: none; color: #38b0d8de;; font-weight: 600; font-size: 24px; margin-top: 33px;"
+                            target="_blank">ImranSutar/LinkedIn
+                        </a>
+                    </div>
+
 
                 </div>
-            </div>
-            <div class="project-card">
-                <img src="/Screenshot (196).png" alt="">
-                <div class="layer">
-                    <h5 class ="project-title">Carnero</h5>
-                    <p class="project-description">Carnero provide any fresh non-veg item with neatly clean. <p class="project-tech-stack">Tech-Stack</p>
-                    <div class="project-deployed-link">
-                        <a href="https://comforting-scone-2ea99b.netlify.app/" target="_blank"><i class='bx bxl-netlify' ></i></a>
-                    </div>
-                    <div class="project-github-link">
-                        <a href="https://github.com/Imran2909/troubled-snail-1304" target="_blank" id="project-deployed-link"><i class='bx bxl-github' ></i></a>
-                    </div>
+
+                <div id="cont2" data-aos="slide-left" data-aos-duration='1900'>
+
+                    <form name="submit-to-google-sheet">
+
+                        <input type="text" name="name" placeholder="Your Name" required="">
+                        <br>
+                        <input type="email" name="email" placeholder="Your Email" required="">
+                        <br>
+                        <textarea name="message" rows="6" placeholder="Your Message" style="resize:none;"
+                            required=""></textarea>
+                        <br>
+                        <button type="submit" class="btn2">Submit</button>
+
+                    </form>
                 </div>
-            </div>
-            <div class="project-card">
-                <img src="/hireexpert.png" alt="">
-                <div class="layer">
-                    <h5 class ="project-title">Hirexpert</h5>
-                    <p class="project-description">It's an online platform from where users can book the
-                        services of professionals for the work in which professionals are needed like carpenter,
-                        electrician, plumber, barber, etc. at their home. 
-                        <p class="project-tech-stack">Tech-Stack</p>
-                    <div class="project-deployed-link">
-                        <a href="https://starlit-croissant-41a86a.netlify.app/" target="_blank"><i class='bx bxl-netlify' ></i></a>
-                    </div>
-                    <div  class="project-github-link">
-                        <a href="https://github.com/Imran2909/puzzled-number-9667" target="_blank" id="project-deployed-link"><i class='bx bxl-github' ></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card">
-                <img src="/Screenshot (199).png" alt="">
-                <div class="layer">
-                    <h5 class="project-title">Dexter</h5>
-                    <p class="project-description">Dexter is online text editor where one or more than one members can work on single
-                        project at same time. </p>
-                    <p class="project-tech-stack">Tech-Stack</p>
-                    <div class="project-deployed-link">
-                        <a href="https://glittering-jelly-591cd2.netlify.app/" target="_blank" ><i class='bx bxl-netlify' ></i></a>
-                    </div>
-                    <div class="project-github-link">
-                        <a href="https://github.com/Amitdevda/paltry-camp-142" target="_blank" id="project-deployed-link"><i class='bx bxl-github' ></i></a>
-                    </div>
-
-                </div>
-            </div>
-  
-
-  
-
-        </div>
-
-     </section>
-
-     <!-- ---------contact section design--------- -->
-     <section class="nav-link contact" id="contact">
-        <div class="nav-link-contact">
-            <h2>Contact <span>Me!</span></h2>
-            <h4>Talent wins games, but teamwork and intelligence win championships.</h4>
-            <p>Fill the form to connect if any query <i class="fas fa-smile"></i>
-            </p>
-            <div class="list">
-                <li><a href="#" id="contact-phone">+91-9370093936</a></li>
-                <li><a href="www.gmail.com" id="contact-email"> sutarimran47@gmail.com </a></li>
-                <li><a href="https://www.linkedin.com/in/imran-sutar-0a858425b/" id="contact-linkedin"> Linkedin : Imran Sutar</a></li>
-                <!-- <li><a href="#">linkedin</a></li> -->
-            </div>
-            <div class="contact-icons">
-                <a id="contact-github" href="https://github.com/Imran2909" target="_blank" ><i class='bx bxl-github' ></i></a>
-                <a href="https://wa.me/+919370093936" target="_blank"><i class='bx bxl-whatsapp' ></i></a>
-                <a id="contact-linkedin" href="https://www.linkedin.com/in/imran-sutar-0a858425b/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
-                <!-- <a href="#"><i class='bx bxl-e'></i></a> -->
 
             </div>
 
-        </div>
-        <div class="contact-form">
-            <form action="">
-                <input type="name" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email Address" required>
-                <input type="" placeholder="Your Mobile Number" required>
-                <textarea name="" id="" cols="35" rows="10" placeholder="How Can I Help You" required></textarea>
-                <input type="submit" value="Send Message" class="submit" required>
-            </form>
-        </div>
-
-     </section>
-
-     <!-- end section design-----------  -->
-     <section class="end">
-        <div class="last-text">
-            <p > Created by Imran Sutar <i style="color: #daa954;" class="fas fa-heart"></i> 2023 All Rights Reserved. </p>
-        </div>
-        <div class="top">
-            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
-        </div>
-       
-
-     </section>
+            <div id="final">
+                Thank you for visiting, hope you liked this. ❤️ from Imran
+            </div>
 
 
-
-
-
-
-
-
-
-    <!-- custom js link -->
-    <script type="text/javascript" src="js/script.js"></script>
 </body>
+
 </html>
-<script src="./index.js"></script>
 
+<!-- 
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
 
+    AOS.init();
+</script>
 
+<script>
+    var TxtType = function (el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 1000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
 
+    TxtType.prototype.tick = function () {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+            this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+            this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+        this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+        if (this.isDeleting) { delta /= 2; }
+        if (!this.isDeleting && this.txt === fullTxt) {
+            delta = this.period;
+            this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+            this.isDeleting = false;
+            this.loopNum++;
+            delta = 500;
+        }
+        setTimeout(function () {
+            that.tick();
+        }, delta);
+    };
+
+    window.onload = function () {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i = 0; i < elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+                new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+        document.body.appendChild(css);
+    };
+</script> -->
