@@ -117,16 +117,34 @@
             background: transparent;
         }
 
-        #resume {
+        #resume-button-1 {
             background-color: #43464bde;
             border: none;
             /* background-color: white; */
             /* border: 1px solid purple; */
         }
 
-        #resumebut {
+        #resume-button-2{
+            height: 50px;
+            background-color: red;
+            width: 140px;
+            margin-top: 57px;
+            border: none;
+            border-radius: 10px;
+            margin-left: 300px;
+            font-size: 26px;
+            padding-bottom: 8px;
+        }
+        #resume-button-2 > a{
+            background-color: red;
+        }
+
+        #resume-button-1>a{
+
+            background-color: red;
+        }
+        #resume-button-1 {
             color: rgb(255, 255, 255);
-            background-color: #43464bde;
             border: none;
             font-size: 18px;
             background-color: rgb(255, 63, 63);
@@ -315,7 +333,9 @@
             height: 160px;
             display: flex;
             gap: 30px;
-            overflow: hidden;
+
+            /* Remove comment of overflow xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+            /* overflow: hidden; */
             /* margin-bottom: -40px; */
         }
 
@@ -326,7 +346,7 @@
             height: 130px;
         }
 
-        @keyframes scroll {
+        /* @keyframes scroll {
             0% {
                 transform: translateX(0);
             }
@@ -338,7 +358,7 @@
 
         .scrol::-webkit-scrollbar{
             width: 0;
-        }
+        } */
 
         .skills-card-name {
             color: rgb(13, 204, 172);
@@ -382,7 +402,8 @@
             text-align: center;
             margin: auto;
             border: 2px solid red;
-            margin-top: 10px;
+            /* make margin top 10px after competing xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+            margin-top: 250px;
             margin-bottom: 80px;
         }
 
