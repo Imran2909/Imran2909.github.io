@@ -9,21 +9,41 @@
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
     <link rel="stylesheet" href=" ">
     <link rel="stylesheet" href="index.css">
-
+    <link rel="stylesheet" href="responsiveness.css">
     <script src="float-panel.js"></script>
     <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
     <!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script> -->
-    <!-- <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <!-- <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
 
     <!-- Nav bar -->
-    <div id="nav-menu" style="position: sticky;  padding-bottom: 10px; ">
+    <div id="nav-menu" style="  padding-bottom: 10px; ">
         <div id="nav">
+            <div id="hide" style="position: relative;" > 
+                <!-- <div id="user-detail-name">
+                    <h3 style="background-color: #14799cde; font-size: 22px;margin-top: -5px; ">Imran Sutar</h3>
+                </div> -->
+                <h3 id="home"> <a href="#intro" class="nav-link home">Home</a> </h3>
+                <h3 id="about" class="about section"> <a href="#about" class="nav-link about"> About</a></h3>
+                <h3 id="skill"> <a href="#skills" class="nav-link skills">Skills</a> </h3>
+                <h3 id="projects"> <a href="#mes" class="nav-link projects">Projects</a> </h3>
+                <h3 id="github"> <a href="#gits" class="nav-link github">github</a> </h3>
+                <h3 id="contact" style="background-color: transparent;"> <a href="#ech" class="nav-link contact">Contact</a> </h3> 
+                
+                <button id="resume-button-1"> <a href="files/Imran_Sutar_Resume.pdf" target="_blank"
+                        download="Imran_Sutar_Resume" id="resume-link-1" class="nav-link resume"
+                        onclick="window.open('https://drive.google.com/file/d/1pw6PtoYD1MdC9AsgNPJN3BdC0yl-ZzYg/view?usp=share_link')">Resume</a>
+                </button>
+            </div>
+
+
             <div id="user-detail-name">
-                <h3 style="background-color: #14799cde; font-size: 22px;margin-top: -5px; ">Imran Sutar</h3>
+                <h3 style="  background-color:#14799cde; font-size: 22px;margin-top: -5px; ">Imran Sutar</h3>
             </div>
             <div id="items">
                 <h3 id="home"> <a href="#intro" class="nav-link home">Home</a> </h3>
@@ -32,7 +52,9 @@
                 <h3 id="projects"> <a href="#mes" class="nav-link projects">Projects</a> </h3>
                 <h3 id="github"> <a href="#gits" class="nav-link github">github</a> </h3>
                 <h3 id="contact"> <a href="#ech" class="nav-link contact">Contact</a> </h3>
+                
             </div>
+            <i class="fas fa-bars"></i>
             <div id="home" style=" background-color: transparent;">
                 <button id="resume-button-1"> <a href="files/Imran_Sutar_Resume.pdf" target="_blank"
                         download="Imran_Sutar_Resume" id="resume-link-1" class="nav-link resume"
@@ -43,12 +65,12 @@
     </div>
 
     <!-- Intro -->
-    <div id="intro" data-aos-once="false" style="padding-top: 30px; margin-top: -30px; display: flex;flex-wrap: wrap;">
+    <div id="intro" data-aos-once="false" style="">
         <div id="pic" data-aos-once="false" data-aos="fade-right" data-aos-duration='1900'>
             <img src="./Picture.jpeg" alt="" id="foto" class="home-img">
         </div>
 
-        <!-- <div id="detail" data-aos-once="false" data-aos="fade-left" data-aos-duration='1900'>
+        <div id="detail" data-aos-once="false" data-aos="fade-left" data-aos-duration='1900'>
             <h1 id="name">Hello I'm <span style="color: aqua;"> Imran Sutar</span> </h1>
                 <a href="" class="typewrite" data-period="800" style="color: #fff; text-decoration: none;"
                     data-type='[ "", "Full Stack Web Developer", "Node Backend Developer", "Emphasize on learning new tech stacks" ]'>
@@ -58,40 +80,15 @@
                 </h3>
                 <div>
                 </div>
-        </div> -->
+        </div>
 
-        <div  id="about" data-aos="fade-down" data-aos-duration='1900' style="width: 50%; margin-left: 200px;" >
-            <h1 id="me" style="text-align: center;">ABOUT ME</h1> <br><br>
-            <div  id="user-detail-intro" >
-                <p style="font-size: 20px;color: #ffffff;" > Learn a new tech stack like Node.js ,
-                    Javascript , ExpressJS , MongoDB , React , etc.
-                    <!-- Hello Everyone, My name is Imran Sutar and I am from Solapur, Maharashtra (India). I
-                    completed
-                    my bachelor's of Enginnering, and after that I joined -->
-                    in Masai School full time course to become a full
-                    stack web developer. Curious to solve new problems , having apetite to  Like
-                    to
-                    work in team and always looking for seeking the knowledge.</p>
-                <!-- <p  style="font-size: 20px;">Hello Everyone, My name is Imran Sutar and I am from Solapur, Maharashtra (India). I
-                    completed
-                    my bachelor's of Enginnering, and after that I joined Masai School full time course to become a full
-                    stack web developer. Curious to solve new problems , having apetite to learn a new tech stack like Node.js ,
-                    Javascript , ExpressJS , MongoDB , React , etc. Like
-                    to
-                    work in team and always looking for seeking the knowledge. </p> -->
-                
-                <button id="resume-button-2" style="margin-bottom: -110px; margin-left: 400px; margin-top: 55px;margin-bottom: 2px;">
-                    <a href="/files/Imran_Sutar_Resume.pdf" download="Imran_Sutar_Resume" id="resume-link-2" 
-                        onclick="window.open('https://drive.google.com/file/d/1pw6PtoYD1MdC9AsgNPJN3BdC0yl-ZzYg/view?usp=share_link')"><span><i
-                                class='bx bx-download'></i></span>Resume</a>
-                </button>
-            </div>
-            </div>
+        
     </div>
 
     <!-- About me -->
-    <!-- <div id="aboutme" data-aos="fade-down" data-aos-duration='1900'>
+    <div id="aboutme" data-aos="fade-down" data-aos-duration='1900'>
         <h1 id="me" style="text-align: center;">ABOUT ME</h1> <br><br>
+        <div id="flx">
         <div id="about">
             <p id="user-detail-intro" style="font-size: 20px;">Hello Everyone, My name is Imran Sutar and I am from Solapur, Maharashtra (India). I
                 completed
@@ -99,18 +96,17 @@
                 stack web developer. Curious to solve new problems , having apetite to learn a new tech stack like Node.js ,
                 Javascript , ExpressJS , MongoDB , etc. Like
                 to
-                work in team and always looking for seeking the knowledge. </p>
-            
-            <button id="resume-button-2" style="margin-bottom: -110px; margin-left: 700px; margin-top: 35px;margin-bottom: 2px;">
+                work in team and always looking for seeking the knowledge. </p> <br>
+            </div>
+            <div>
+            <button id="resume-button-2" style=" ">
                 <a href="/files/Imran_Sutar_Resume.pdf" download="Imran_Sutar_Resume" id="resume-link-2" 
                     onclick="window.open('https://drive.google.com/file/d/1pw6PtoYD1MdC9AsgNPJN3BdC0yl-ZzYg/view?usp=share_link')"><span><i
                             class='bx bx-download'></i></span>Resume</a>
             </button>
-        </div> -->
+        </div>
 
-        <div id="bot" data-aos="fade-left" data-aos-duration='1900' style="margin-top: -190px;padding-top: -30px;
-          margin-left: 555px;">
-            <div>
+        <div id="bot" data-aos="fade-left" data-aos-duration='1900' >
                 <a href="" id="contact-github"> <img class="imeg" id="i1"
                         src="https://cdn-icons-png.flaticon.com/512/1051/1051326.png" alt=""> </a>
                 <a href="" id="contact-linkedin"> <img class="imeg" id="i2"
@@ -119,10 +115,9 @@
                         src="https://cdn-icons-png.flaticon.com/512/455/455705.png" alt=""> </a>
                 <a href="" id="contact-email"> <img class="imeg" id="i4"
                         src="https://cdn-icons-png.flaticon.com/512/3178/3178158.png" alt=""> </a>
-            </div>
-
-        </div>
-    <!-- </div> <br> -->
+        </div> 
+    </div>
+  </div> <br>
 
     <!-- Skills -->
     <div id="skills" style="height: 55px;">
@@ -137,11 +132,11 @@
     </div>
     <div id="skills" data-aos="fade-right" data-aos-duration='1900' style="padding-top: 30px;">
 
-        <div id="title-skill" style="margin-top: -22px;">
+        <div id="title-skill" style="">
             <h1 id="me"> SKILLS</h1>
         </div>
 
-        <div id="all-skills" class="scrol" style="display: flex; flex-wrap: wrap;">
+        <div id="all-skills" class="scrol" style="">
             <div class="skills-card">
                 <div id="big">
                     <img class="skills-card-img" src="https://img.icons8.com/color/256/html-5.png" alt="">
@@ -288,7 +283,7 @@
 
     <!-- Projects -->
     <div id="projectsall" style="padding-top: -10px;">
-        <h1 id="mes" style="margin-top: 300px;width: 100%;padding-top: 0px;">PROJECTS</h1>
+        <h1 id="mes" style="">PROJECTS</h1>
 
         <div class="project-card" data-aos="slide-left" data-aos-duration='1900'>
             <div id="proimg">
@@ -427,7 +422,7 @@
     </div>
 
     <!-- Github -->
-    <h1 id="gits" style="margin-top: 30px; padding-top: 00px; "> GITHUB </h1>
+    <h1 id="gits" style=""> GITHUB </h1>
     <div id="gitall">
         <div id="stats">
             <h2 class="mid"></h2>
@@ -435,10 +430,10 @@
                 <img data-aos="flip-right" data-aos-duration='1900' id="github-streak-stats"
                     src="https://github-readme-streak-stats.herokuapp.com?user=Imran2909&theme=chartreuse-dark&border_radius=4.6&card_width=548"
                     alt="">
-                <img data-aos="flip-left" data-aos-duration='1900' style="margin-left: 50px;" id="github-stats-card"
+                <img data-aos="flip-left" data-aos-duration='1900' style="" id="github-stats-card"
                     src="https://github-readme-stats.vercel.app/api?username=Imran2909&show_icons=true&theme=highcontrast"
                     alt=""> <br>
-                <img data-aos="zoom-out-down" data-aos-duration='1900' style="margin:20px 420px;" id="github-top-langs"
+                <img data-aos="zoom-out-down" data-aos-duration='1900' style="" id="github-top-langs"
                     src="https://github-readme-stats.vercel.app/api/top-langs?username=Imran2909&amp;show_icons=true&amp;locale=en&amp;layout=compact&theme=highcontrast" "="" alt="">
         </div>
     </div>
@@ -459,11 +454,13 @@
                     // or enable responsive functionality
                     GitHubCalendar(".calendar", "Imran2909", { responsive: true });
                 </script>
-            </div>
+    </div>
 
-            <!-- Contact -->
-            <h1 id="ech" style="margin-top: 150px; padding-top: 0px;">CONTACT</h1>
-            <div id="contacts">
+
+    <!-- Contact -->
+    <div>
+    <h1 id="ech" style="margin-top: 150px; padding-top: 0px;">CONTACT</h1>
+    <div id="contacts">
                 <div id="cont" data-aos="slide-right" data-aos-duration='1900'>
                     <h1 style="margin-bottom: 40px; margin-top: 20px; color: #ffffff;">Contact Me !!!</h1>
 
@@ -534,11 +531,13 @@
                     </form>
                 </div>
 
-            </div>
+    </div>
 
-            <div id="final">
-                Thank you for visiting, hope you liked this. ❤️ from Imran
-            </div>
+    <div id="final">
+    Thank you for visiting, hope you liked this. ❤️ from Imran
+    </div>
+    </div>
+
 
 </body>
 
