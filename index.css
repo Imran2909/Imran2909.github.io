@@ -191,7 +191,7 @@
 #intro {
     /* border: 1px solid red; */
     margin-bottom: 40px;
-    display: flex;
+    /* display: flex; */
     padding-top: 110px;
     /* justify-content: space-between; */
 }
