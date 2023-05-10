@@ -110,8 +110,7 @@
         margin-top: -50px;
     }
     #allstat{
-        /* //oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo */
-        border: 1px solid red;
+       
         padding-left: 18%;
         width: auto;
     }
@@ -260,7 +259,6 @@
         margin-top: -50px;
     }
     #allstat{
-        /* border: 1px solid red; */
         padding-left: 8%;
         width: auto;
     }
