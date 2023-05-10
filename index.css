@@ -86,11 +86,12 @@
     /* transition: all .45s ease; */
     font-size: 22px;
     /* padding-bottom: 40px; */
-    margin-left: 40px;
+    /* margin-left: 40px; */
 }
 
 #items {
     /* border: 1px solid black; */
+    margin-left: -100px;
     height: 25px;
     display: flex;
     width: 40%;
